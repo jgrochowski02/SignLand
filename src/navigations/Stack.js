@@ -2,14 +2,28 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import HistoryScreen from '../screens/HisotryScreen';
+import LoginScreen from '../screens/authentication/LoginScreen';
+import RegisterScreen from '../screens/authentication/RegisterScreen';
+import AccountScreen from '../screens/AccountScreen';
+import DirectoryScreen from '../screens/DirectoryScreen';
+import RegisterScreen from '../screens/authentication/RegisterScreen';
+import SettingsScreen from '../screens/SettingsScreen';
+import ResultScreen from '../screens/ResultScreen';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="History" component={HistoryScreen} />
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="HistoryScreen" component={HistoryScreen} />
+      <Stack.Screen name="LoginScreen" component={LoginScreen} />
+      <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+      <Stack.Screen name="AccountScreen" component={AccountScreen} />
+      <Stack.Screen name="ResultScreen" component={ResultScreen} />
+      <Stack.Screen name="DirectoryScreen" component={DirectoryScreen} />
+      <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
+       
     </Stack.Navigator>
   );
 };
