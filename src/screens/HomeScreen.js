@@ -1,29 +1,18 @@
+// src/screens/HomeScreen.js
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
+import Header from '../components/Header';
+import CameraComponent from '../components/CameraComponent';
+import styles from '../utils/styles';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>To jest ekran główny!</Text>
-      <Button
-        title="Przejdź do Historii"
-        onPress={() => navigation.navigate('History')}
-      />
+    <View style={styles.containerNoCenter}>
+      <Header title="Zdjęcie" />
+      <CameraComponent />
+     
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5f5f5',
-  },
-  text: {
-    fontSize: 24,
-    color: '#333',
-  },
-});
 
 export default HomeScreen;

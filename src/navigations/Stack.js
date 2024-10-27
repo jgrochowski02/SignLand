@@ -6,15 +6,16 @@ import LoginScreen from '../screens/authentication/LoginScreen';
 import RegisterScreen from '../screens/authentication/RegisterScreen';
 import AccountScreen from '../screens/AccountScreen';
 import DirectoryScreen from '../screens/DirectoryScreen';
-import RegisterScreen from '../screens/authentication/RegisterScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ResultScreen from '../screens/ResultScreen';
 
 const Stack = createStackNavigator();
 
+
+
 const AppNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="HistoryScreen" component={HistoryScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />

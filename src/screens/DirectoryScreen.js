@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const HistoryScreen = () => {
+const DirectoryScreen = () => {
   return (
     <View >
-      <Text >To jest ekran historii!</Text>
+      <Text >To jest ekran katalogu znakow!</Text>
     </View>
   );
 };
 
 
-export default HistoryScreen;
+export default DirectoryScreen;
