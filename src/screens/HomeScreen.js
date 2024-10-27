@@ -1,29 +1,23 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Button } from 'react-native';
+import Header from '../components/Header';
+import CameraComponent from '../components/CameraComponent';
+import BottomMenu from '../components/BottomMenu';
+import styles from '../utils/styles';
 
 const HomeScreen = ({ navigation }) => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>To jest ekran główny!</Text>
-      <Button
-        title="Przejdź do Historii"
-        onPress={() => navigation.navigate('History')}
-      />
-    </View>
-  );
+    const goToProgress = (photoUri) => {
+        // Tutaj możesz przejść do następnego ekranu, przekazując URI zdjęcia
+        navigation.navigate('ProgressScreen', { photoUri });
+    };
+//  <CameraComponent goToProgress={goToProgress} /> pod Headerem
+    return (
+        <View style={styles.containerNoCenter}>
+            <Header title="ZDJĘCIE" />
+          
+          <BottomMenu navigation={navigation} />
+        </View>
+    );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5f5f5',
-  },
-  text: {
-    fontSize: 24,
-    color: '#333',
-  },
-});
 
 export default HomeScreen;

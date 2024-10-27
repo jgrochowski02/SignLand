@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const HistoryScreen = () => {
+const SettingsScreen = () => {
   return (
     <View >
-      <Text >To jest ekran historii!</Text>
+      <Text >To jest ekran ustawien!</Text>
     </View>
   );
 };
 
 
-export default HistoryScreen;
+export default SettingsScreen;
