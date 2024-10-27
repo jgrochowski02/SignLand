@@ -74,7 +74,7 @@ centeredIconContainer: {
     borderRadius: 30, 
     padding: 15, 
 },
-icon: {
+BottomMenuicon: {
     width: 30,
     height: 30,
 },
@@ -82,6 +82,69 @@ label: {
     fontSize: 12,
     color: '#000',
 },
+
+
+
+containerLogin: {
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: 16,
+  
+},
+inputLoginContainer: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  borderBottomWidth: 1,
+  borderBottomColor: '#ccc',
+  marginBottom: 20,
+  width: '100%',
+  color: colours.text
+  
+},
+overlay: {
+  padding: 50,
+  width: '100%',
+  alignItems: 'center',
+},
+inputLogin: {
+  flex: 1,
+  height: 40,
+  paddingHorizontal: 10,
+},
+buttonLogin: {
+  backgroundColor: colours.orange,
+  paddingVertical: 10,
+  paddingHorizontal: 20,
+  borderRadius: 25,
+  marginTop: 20, 
+},
+buttonTextLogin: {
+  color: colours.text,
+  fontSize: 25,
+},
+iconLogin: {
+  width: 24,
+  height: 24,
+  marginRight: 10, 
+},
+titleLogin: {
+  fontSize: 24,
+  fontWeight: 'bold',
+  marginBottom: 20,
+},
+forgotPassword: {
+  marginTop: 10,
+},
+register: {
+  marginTop: 30, 
+},
+link: {
+  color: colours.text,
+ 
+},
+
+
 
 
 
