@@ -14,7 +14,7 @@ const RegisterComponent = ({ onRegister, name, setName, email, setEmail, passwor
              
                     <View style={styles.inputLoginContainer}>
                         <Image
-                            source={require('../assets/user.png')} // Użyj ikony dla imienia
+                            source={require('../assets/user.png')} 
                             style={styles.iconLogin}
                         />
                         <TextInput
@@ -61,7 +61,7 @@ const RegisterComponent = ({ onRegister, name, setName, email, setEmail, passwor
                   
                     <View style={styles.inputLoginContainer}>
                         <Image
-                            source={require('../assets/padlock.png')} // Użyj tej samej ikony
+                            source={require('../assets/padlock.png')} 
                             style={styles.iconLogin}
                         />
                         <TextInput

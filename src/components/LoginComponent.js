@@ -1,7 +1,7 @@
-// src/components/LoginComponent.js
 import React, { useState } from 'react';
 import { TouchableWithoutFeedback, Keyboard, View, TextInput, TouchableOpacity, Text, Image, ImageBackground } from 'react-native';
 import styles from '../utils/styles';
+
 
 const LoginComponent = ({ onLogin, onRegister }) => {
     const [email, setEmail] = useState('');
@@ -14,11 +14,12 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                 style={styles.containerLogin}
             >
                 <View style={styles.overlay}> 
+                <View style={styles.inputLoginContainer}>
                     <Image
                         source={require('../assets/mail.png')} 
                         style={styles.iconLogin}
                     />
-                    <View style={styles.inputLoginContainer}>
+                    
                         <TextInput
                             placeholder="E-mail"
                             placeholderTextColor="#000" 
@@ -28,11 +29,13 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                             onFocus={() => setEmail('')} 
                         />
                     </View>
+                    <View style={styles.inputLoginContainer}>
+
                     <Image
                         source={require('../assets/padlock.png')}
                         style={styles.iconLogin}
                     />
-                    <View style={styles.inputLoginContainer}>
+                   
                         <TextInput
                             placeholder="Hasło"
                             placeholderTextColor="#000" 
