@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigations/Stack';
 import * as Permissions from 'expo-permissions';
 import { Camera } from 'expo-camera';
+import './src/firebaseConfig';
 
 const App = () => {
   const [hasPermission, setHasPermission] = useState(null);
