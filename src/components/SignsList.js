@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
 const signsData = [
-    { id: '1', name: 'Znaki ostrzegawcze', icon: require('../assets/warning.png'), screen: 'SignDetailScreen1' },
-    { id: '2', name: 'Znaki zakazu', icon: require('../assets/prohibition.png'), screen: 'SignDetailScreen2' },
-    { id: '3', name: 'Znaki nakazu', icon: require('../assets/mandatory.png'), screen: 'SignDetailScreen2' },
-    { id: '4', name: 'Znaki informacyjne', icon: require('../assets/informative.png'), screen: 'SignDetailScreen2' },
-    { id: '5', name: 'Znaki kierunku', icon: require('../assets/direction.png'), screen: 'SignDetailScreen2' },
-    { id: '6', name: 'Znaki uzupełniające', icon: require('../assets/complementary.png'), screen: 'SignDetailScreen2' },
+    { id: '1', name: 'Znaki ostrzegawcze', icon: require('../assets/icons/warning.png'), screen: 'SignDetailScreen1' },
+    { id: '2', name: 'Znaki zakazu', icon: require('../assets/icons/prohibition.png'), screen: 'SignDetailScreen2' },
+    { id: '3', name: 'Znaki nakazu', icon: require('../assets/icons/mandatory.png'), screen: 'SignDetailScreen2' },
+    { id: '4', name: 'Znaki informacyjne', icon: require('../assets/icons/informative.png'), screen: 'SignDetailScreen2' },
+    { id: '5', name: 'Znaki kierunku', icon: require('../assets/icons/direction.png'), screen: 'SignDetailScreen2' },
+    { id: '6', name: 'Znaki uzupełniające', icon: require('../assets/icons/complementary.png'), screen: 'SignDetailScreen2' },
 ];
 
 const SignsList = ({ navigation }) => {
