@@ -2,6 +2,26 @@
   "expo": {
     "name": "SignLand",
     "slug": "SignLand",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",  
+    "platforms": ["ios", "android"],
+    "ios": {
+     "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+          }
+        ]
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+    
   }
 }

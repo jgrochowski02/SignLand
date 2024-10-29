@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Camera, CameraType } from "expo-camera";
+import { Camera } from 'expo-camera/legacy';
+
 import {
     Button,
     Image,
@@ -10,32 +11,42 @@ import {
 } from "react-native";
 import * as FileSystem from "expo-file-system";
 
-export default function CameraComponent({ goToProgress }) {
-    const [type, setType] = useState(CameraType.back);
-    const [hasPermission, setHasPermission] = useState(null);
+export default function Cam({ goToProgress }) {
+    const [type, setType] = useState(Camera.Constants.Type.back); // Używamy Camera.Constants.Type
+    const [permission, requestPermission] = Camera.useCameraPermissions();
+    const [photoName, setPhotoName] = useState('');
     const [photoUri, setPhotoUri] = useState(null);
-    const cameraRef = useRef(null); // Użycie ref
+    const cameraRef = useRef(null); // Używamy useRef do przechowywania referencji
 
     useEffect(() => {
         const askForPermission = async () => {
             const { status } = await Camera.requestCameraPermissionsAsync();
-            setHasPermission(status === "granted");
+            if (status === "granted") {
+                // Permission granted
+            } else {
+                // Handle permission denied
+                console.log("Permission denied");
+            }
         };
         askForPermission();
     }, []);
 
-    const toggleCameraType = () => {
-        setType((current) => 
-            current === CameraType.back ? CameraType.front : CameraType.back
+    function toggleCameraType() {
+        setType((current) =>
+            current === Camera.Constants.Type.back
+                ? Camera.Constants.Type.front
+                : Camera.Constants.Type.back
         );
-    };
+    }
 
-    const takePicture = async () => {
+    async function takePicture() {
         if (cameraRef.current) {
             try {
                 const { uri } = await cameraRef.current.takePictureAsync();
                 const fileName = `photo_${Date.now()}.jpg`;
-                const folderName = "photos";
+                setPhotoName(fileName);
+
+                const folderName = "photos"; // Nazwa folderu
                 const folderUri = `${FileSystem.documentDirectory}${folderName}/`;
                 const fileUri = `${folderUri}${fileName}`;
 
@@ -46,24 +57,26 @@ export default function CameraComponent({ goToProgress }) {
                     });
                 }
 
-                await FileSystem.moveAsync({
+                await FileSystem.copyAsync({
                     from: uri,
                     to: fileUri,
                 });
 
                 console.log("Zdjęcie zapisane w folderze:", fileUri);
-                setPhotoUri(fileUri); // Ustawiamy URI zapisanej fotografii
+                setPhotoUri(uri);
+
             } catch (error) {
                 console.error("Błąd podczas robienia zdjęcia:", error);
             }
         }
-    };
-
-    if (hasPermission === null) {
-        return <View><Text>Requesting for camera permission</Text></View>;
     }
-    if (hasPermission === false) {
-        return <Text>No access to camera</Text>;
+
+    if (!permission) {
+        return <View><Text>Proszę czekać na uprawnienia...</Text></View>;
+    }
+
+    if (!permission.granted) {
+        return <View><Text>Brak dostępu do kamery</Text></View>;
     }
 
     return (
@@ -89,22 +102,21 @@ export default function CameraComponent({ goToProgress }) {
                     </TouchableOpacity>
                     <Button
                         onPress={takePicture}
-                        title="Zrób zdjęcie"
+                        title="Zrób zdjęcie i zapisz"
                     />
                 </View>
             )}
             {photoUri && (
                 <View style={styles.buttonContainer}>
                     <Button
-                        title="Zapisz i kontynuuj"
-                        onPress={() => goToProgress(photoUri)} // Przechodzimy dalej z URI zdjęcia
+                        title="Zapisz"
+                        onPress={() => goToProgress(photoName)}
                     />
                 </View>
             )}
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -131,4 +143,4 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "white",
     },
-});
+})
