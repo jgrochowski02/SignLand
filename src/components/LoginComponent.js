@@ -16,7 +16,7 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                 <View style={styles.overlay}> 
                 <View style={styles.inputLoginContainer}>
                     <Image
-                        source={require('../assets/icons/mail.png')} 
+                        source={require('../assets/icons/BlackE-mail.png')} 
                         style={styles.iconLogin}
                     />
                     
@@ -32,7 +32,7 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                     <View style={styles.inputLoginContainer}>
 
                     <Image
-                        source={require('../assets/icons/padlock.png')}
+                        source={require('../assets/icons/lockPadlock.png')}
                         style={styles.iconLogin}
                     />
                    
@@ -51,7 +51,7 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                     </TouchableOpacity>
                     
                    
-                    <TouchableOpacity style={styles.forgotPassword} onPress={() => {/* Akcja po kliknięciu "Zapomniałeś hasła?" */}}>
+                    <TouchableOpacity style={styles.forgotPassword} onPress={() => {}}>
                         <Text style={styles.link}>Zapomniałeś hasła?</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.register} onPress={onRegister}>

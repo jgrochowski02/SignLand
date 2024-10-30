@@ -6,7 +6,7 @@ import { auth } from '../../firebaseConfig';
 import RegisterComponent from '../../components/RegisterComponent';
 
 const RegisterScreen = () => {
-    const navigation = useNavigation(); 
+    const navigation = useNavigation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -22,23 +22,21 @@ const RegisterScreen = () => {
             return;
         }
 
+      
         if (password.length < 6) {
             Alert.alert('Błąd walidacji', 'Hasło musi mieć co najmniej 6 znaków.');
             return;
         }
-
         if (password !== confirmPassword) {
             Alert.alert('Błąd walidacji', 'Hasła muszą się zgadzać.');
             return;
         }
 
         try {
-           
             await createUserWithEmailAndPassword(auth, email, password);
             Alert.alert('Sukces', 'Rejestracja zakończona sukcesem');
             navigation.navigate('LoginScreen');
         } catch (error) {
-            
             let errorMessage;
             switch (error.code) {
                 case 'auth/email-already-in-use':
@@ -54,11 +52,15 @@ const RegisterScreen = () => {
         }
     };
 
+    const navigateToLogin = () => {
+        navigation.navigate('LoginScreen');
+    };
+
     return (
         <View style={{ flex: 1 }}>
             <RegisterComponent
                 onRegister={handleRegister}
-                
+                onNavigateToLogin={navigateToLogin} 
                 email={email}
                 setEmail={setEmail}
                 password={password}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigations/Stack';
+import { AvatarProvider } from './src/context/AvatarContext';
 import * as Permissions from 'expo-permissions';
 import { Camera } from 'expo-camera';
 import './src/firebaseConfig';
@@ -24,9 +25,11 @@ const App = () => {
   }
 
   return (
+    <AvatarProvider>
     <NavigationContainer>
       <AppNavigator />
     </NavigationContainer>
+      </AvatarProvider>
   );
 };
 
