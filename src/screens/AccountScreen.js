@@ -8,13 +8,14 @@ import UserInfo from '../components/UserInfo';
 import UserChoice from '../components/UserChoice'; 
 import styles from '../utils/styles';
 import AvatarDisplay from '../components/AvatarDisplay';
-import { useAvatar } from '../context/AvatarContext'; // Importuj kontekst
+import { useAvatar } from '../context/AvatarContext';
+import ChangePasswordScreen from './ChangePasswordScreen';
 
 const AccountScreen = ({ navigation }) => {
-  const { avatarUri } = useAvatar(); // Uzyskaj avatar z kontekstu
+  const { avatarUri } = useAvatar(); 
 
   const handleEditData = () => {
-    navigation.navigate('EditDataScreen'); 
+    navigation.navigate('ChangePasswordScreen');
   };
 
   const handleSettings = () => {
@@ -39,7 +40,7 @@ const AccountScreen = ({ navigation }) => {
       <Header title="PROFIL" />
       <AvatarDisplay avatarUri={avatarUri} /> 
       <UserInfo />
-      <UserChoice title="Edytuj dane" icon={require('../assets/icons/editing.png')} onPress={handleEditData} />
+      <UserChoice title="Zmiana hasła" icon={require('../assets/icons/editing.png')} onPress={handleEditData} />
       <UserChoice title="Ustawienia" icon={require('../assets/icons/setting.png')} onPress={handleSettings} />
       <UserChoice title="Polityka prywatności" icon={require('../assets/icons/padlock.png')} onPress={handlePrivacyPolicy} />
       <UserChoice title="Wyloguj" icon={require('../assets/icons/logout.png')} onPress={handleLogout} />
