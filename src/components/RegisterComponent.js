@@ -7,29 +7,14 @@ const RegisterComponent = ({ onRegister, name, setName, email, setEmail, passwor
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <ImageBackground
-                source={require('../assets/BackgroundLogin.jpg')} 
+                source={require('../assets/icons/BackgroundLogin.jpg')} 
                 style={styles.containerLogin}
             >
                 <View style={styles.overlay}> 
-             
-                    <View style={styles.inputLoginContainer}>
-                        <Image
-                            source={require('../assets/user.png')} 
-                            style={styles.iconLogin}
-                        />
-                        <TextInput
-                            placeholder="Imię"
-                            placeholderTextColor="#000" 
-                            value={name}
-                            onChangeText={setName}
-                            style={styles.inputLogin}
-                            onFocus={() => setName('')} 
-                        />
-                    </View>
                     
                     <View style={styles.inputLoginContainer}>
                         <Image
-                            source={require('../assets/mail.png')} 
+                            source={require('../assets/icons/mail.png')} 
                             style={styles.iconLogin}
                         />
                         <TextInput
@@ -44,7 +29,7 @@ const RegisterComponent = ({ onRegister, name, setName, email, setEmail, passwor
 
                     <View style={styles.inputLoginContainer}>
                         <Image
-                            source={require('../assets/padlock.png')}
+                            source={require('../assets/icons/padlock.png')}
                             style={styles.iconLogin}
                         />
                         <TextInput
@@ -61,7 +46,7 @@ const RegisterComponent = ({ onRegister, name, setName, email, setEmail, passwor
                   
                     <View style={styles.inputLoginContainer}>
                         <Image
-                            source={require('../assets/padlock.png')} 
+                            source={require('../assets/icons/padlock.png')} 
                             style={styles.iconLogin}
                         />
                         <TextInput

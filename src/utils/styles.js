@@ -144,7 +144,10 @@ link: {
  
 },
 
-
+itemText:{
+  fontSize: 20,
+  fontWeight: 'bold',
+}
 
 
 
