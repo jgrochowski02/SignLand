@@ -7,7 +7,6 @@ import RegisterComponent from '../../components/RegisterComponent';
 
 const RegisterScreen = () => {
     const navigation = useNavigation(); 
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -59,8 +58,7 @@ const RegisterScreen = () => {
         <View style={{ flex: 1 }}>
             <RegisterComponent
                 onRegister={handleRegister}
-                name={name}
-                setName={setName}
+                
                 email={email}
                 setEmail={setEmail}
                 password={password}
