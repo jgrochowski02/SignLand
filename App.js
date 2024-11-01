@@ -3,11 +3,13 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigations/Stack';
 import { AvatarProvider } from './src/context/AvatarContext';
+import { UserProvider } from './src/context/UserContext';
 import * as Permissions from 'expo-permissions';
 import { Camera } from 'expo-camera';
 import './src/firebaseConfig';
 
 const App = () => {
+  const [isGuest, setIsGuest] = useState(false);
   const [hasPermission, setHasPermission] = useState(null);
 
   useEffect(() => {
@@ -25,11 +27,13 @@ const App = () => {
   }
 
   return (
-    <AvatarProvider>
-    <NavigationContainer>
-      <AppNavigator />
-    </NavigationContainer>
+    <UserProvider>
+      <AvatarProvider>
+        <NavigationContainer>
+          <AppNavigator/>
+       </NavigationContainer>
       </AvatarProvider>
+    </UserProvider>
   );
 };
 

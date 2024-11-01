@@ -3,7 +3,7 @@ import { TouchableWithoutFeedback, Keyboard, View, TextInput, TouchableOpacity, 
 import styles from '../utils/styles';
 
 
-const LoginComponent = ({ onLogin, onRegister }) => {
+const LoginComponent = ({ onLogin, onRegister, onGuestAccess  }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -56,6 +56,9 @@ const LoginComponent = ({ onLogin, onRegister }) => {
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.register} onPress={onRegister}>
                         <Text style={[styles.link, { fontSize: 35 }]}>Zarejestruj</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonLogin} onPress={onGuestAccess}>
+                        <Text style={styles.buttonTextLogin}>Kontynuuj bez logowania</Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>

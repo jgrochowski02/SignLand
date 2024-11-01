@@ -1,10 +1,19 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, Image, StyleSheet } from 'react-native';
+import { View, TouchableOpacity, Text, Image, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { useUserContext } from '../context/UserContext';
 import styles from '../utils/styles';
+const BottomMenu = () => {
+    const navigation = useNavigation();
+    const { isGuest } = useUserContext();
 
-const BottomMenu = ({ navigation }) => {
     const handlePress = (screen) => {
-        navigation.navigate(screen);
+        if (isGuest && screen !== 'DirectoryScreen') {
+            Alert.alert('Zaloguj się, aby odblokować dostęp.');
+            navigation.navigate('LoginScreen');
+        } else {
+            navigation.navigate(screen);
+        }
     };
 
     return (
@@ -15,13 +24,12 @@ const BottomMenu = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('ResultScreen')}>
                 <Image source={require('../assets/icons/gallery.png')} style={styles.BottomMenuicon} />
-                <Text style={styles.label}>Gallery</Text>
+                <Text style={styles.label}>Galeria</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.tabCentered} onPress={() => handlePress('HomeScreen')}>
                 <View style={styles.centeredIconContainer}>
                     <Image source={require('../assets/icons/camera.png')} style={styles.BottomMenuicon} />
                 </View>
-               
             </TouchableOpacity>
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('HistoryScreen')}>
                 <Image source={require('../assets/icons/history.png')} style={styles.BottomMenuicon} />
