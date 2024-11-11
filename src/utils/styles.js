@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     backgroundColor: colours.header,
     alignItems: 'center',
+    paddingTop: '15%',
   },
   headerText: {
     fontSize: 30,
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    height: 60,
+    height: 80,
     backgroundColor: '#fff',
     borderTopWidth: 1,
     borderTopColor: '#ccc',
@@ -75,8 +76,8 @@ centeredIconContainer: {
     padding: 15, 
 },
 BottomMenuicon: {
-    width: 30,
-    height: 30,
+    width: 35,
+    height: 35,
 },
 label: {
     fontSize: 12,

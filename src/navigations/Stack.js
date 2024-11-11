@@ -9,6 +9,7 @@ import DirectoryScreen from '../screens/DirectoryScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ResultScreen from '../screens/ResultScreen';
 import ChangePasswordScreen from '../screens/ChangePasswordScreen';
+import PhotosScreen from '../screens/PhotosScreen';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ const AppNavigator = () => {
       <Stack.Screen name="DirectoryScreen" component={DirectoryScreen} />
       <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
       <Stack.Screen name="ChangePasswordScreen" component={ChangePasswordScreen} />
+      <Stack.Screen name="PhotosScreen" component={PhotosScreen} />
     </Stack.Navigator>
   );
 };

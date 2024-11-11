@@ -22,7 +22,7 @@ const BottomMenu = () => {
                 <Image source={require('../assets/icons/list.png')} style={styles.BottomMenuicon} />
                 <Text style={styles.label}>Atlas</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.tab} onPress={() => handlePress('ResultScreen')}>
+            <TouchableOpacity style={styles.tab} onPress={() => handlePress('PhotosScreen')}>
                 <Image source={require('../assets/icons/gallery.png')} style={styles.BottomMenuicon} />
                 <Text style={styles.label}>Galeria</Text>
             </TouchableOpacity>
