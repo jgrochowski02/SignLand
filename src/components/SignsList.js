@@ -8,6 +8,8 @@ const signsData = [
     { id: '4', name: 'Znaki informacyjne', icon: require('../assets/icons/informative.png'), screen: 'SignDetailScreen2' },
     { id: '5', name: 'Znaki kierunku', icon: require('../assets/icons/direction.png'), screen: 'SignDetailScreen2' },
     { id: '6', name: 'Znaki uzupełniające', icon: require('../assets/icons/complementary.png'), screen: 'SignDetailScreen2' },
+    { id: '7', name: 'Tabliczki do znaków', icon: require('../assets/icons/addiction.png'), screen: 'SignDetailScreen2' },
+    { id: '8', name: 'Znaki kolejowe', icon: require('../assets/icons/railway.png'), screen: 'SignDetailScreen2' },
 ];
 
 const SignsList = ({ navigation }) => {
@@ -31,9 +33,10 @@ const SignsList = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     itemContainer: {
+   
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 16,
+        padding: 13,
         borderBottomWidth: 1,
         borderBottomColor: '#ddd',
     },
@@ -46,7 +49,6 @@ const styles = StyleSheet.create({
         fontSize: 28,
         flex: 1, 
         textAlign: 'center', 
-        
     },
 });
 

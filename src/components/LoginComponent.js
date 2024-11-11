@@ -54,7 +54,7 @@ const LoginComponent = ({ onLogin, onRegister, onGuestAccess  }) => {
                     <TouchableOpacity style={styles.forgotPassword} onPress={() => {}}>
                         <Text style={styles.link}>Zapomniałeś hasła?</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.register} onPress={onRegister}>
+                    <TouchableOpacity style={styles.buttonLogin} onPress={onRegister}>
                         <Text style={[styles.link, { fontSize: 35 }]}>Zarejestruj</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.buttonLogin} onPress={onGuestAccess}>
