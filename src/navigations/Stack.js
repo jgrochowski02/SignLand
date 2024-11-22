@@ -10,14 +10,14 @@ import SettingsScreen from '../screens/SettingsScreen';
 import ResultScreen from '../screens/ResultScreen';
 import ChangePasswordScreen from '../screens/ChangePasswordScreen';
 import PhotosScreen from '../screens/PhotosScreen';
+import SignsScreen from '../screens/SignsScreen.js';
+import SignDetailScreen from '../screens/SignDetailScreen.js';
 
 const Stack = createStackNavigator();
 
-
-
 const AppNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="LoginScreen" screenOptions={{ headerShown: false }}>
+    <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="HistoryScreen" component={HistoryScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
@@ -28,6 +28,8 @@ const AppNavigator = () => {
       <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
       <Stack.Screen name="ChangePasswordScreen" component={ChangePasswordScreen} />
       <Stack.Screen name="PhotosScreen" component={PhotosScreen} />
+      <Stack.Screen name="SignsScreen" component={SignsScreen} />
+      <Stack.Screen name="SignDetailScreen" component={SignDetailScreen} />
     </Stack.Navigator>
   );
 };
