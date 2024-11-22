@@ -8,10 +8,15 @@ const SignsScreen = ({ route, navigation }) => {
     const [signs, setSigns] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const capitalizeFirstLetter = (text) => {
+        if (!text) return '';
+        return text.charAt(0).toUpperCase() + text.slice(1);
+    };
+    
 
     useEffect(() => {
         console.log(`Fetching signs for category: ${category}`);
-        fetch(`http://192.168.0.104:5000/api/signs/${encodeURIComponent(category)}`)
+        fetch(`http://192.168.0.104:5000/api/signs/${encodeURIComponent(category)}`) // Zakoduj kategorię
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,6 +33,7 @@ const SignsScreen = ({ route, navigation }) => {
                 setLoading(false);
             });
     }, [category]);
+    
 
     if (loading) {
         return (
@@ -57,27 +63,34 @@ const SignsScreen = ({ route, navigation }) => {
         <View style={styles.container}>
 
             <Header title="ZNAKI" />
+          
             <FlatList
     data={signs}
     keyExtractor={(item) => item.name}
-    renderItem={({ item }) => (
-        <TouchableOpacity
-            style={styles.itemContainer}
-            onPress={() =>
-                navigation.navigate('SignDetailScreen', {
-                    sign: {
-                        name: item.name, 
-                        imageUrl: `http://192.168.0.104:5000${item.url}`, 
-                        description: 'Niebezpieczny zakręt w prawo. Ostrzega o niebezpiecznym zakręcie w kierunku wskazanym na znaku. Zobowiązuje uczestników ruchu do zachowania szczególnej ostrożności.', // Przykładowy opis
-                    },
-                })
-            }
-        >
-            <Image source={{ uri: `http://192.168.0.104:5000${item.url}` }} style={styles.icon} resizeMode="contain"/>
-            <Text style={styles.itemText}>{item.name}</Text>
-        </TouchableOpacity>
-    )}
+    renderItem={({ item }) => {
+        const imageUrl = `http://192.168.0.104:5000/api/image/${encodeURIComponent(category)}/${encodeURIComponent(item.name)}.png`;
+
+        return (
+            <TouchableOpacity
+                style={styles.itemContainer}
+                onPress={() =>
+                    navigation.navigate('SignDetailScreen', {
+                        sign: {
+                            name: item.name,
+                            imageUrl: imageUrl,
+                            title: item.title,
+                            description: item.description,
+                        },
+                    })
+                }
+            >
+                <Image source={{ uri: imageUrl }} style={styles.icon} resizeMode="contain" />
+                <Text style={styles.itemText}>{capitalizeFirstLetter(item.name)}</Text>
+            </TouchableOpacity>
+        );
+    }}
 />
+
 
             <BottomMenu navigation={navigation} />
         </View>

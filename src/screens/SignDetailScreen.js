@@ -1,17 +1,36 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import Header from '../components/Header';
+import BottomMenu from '../components/BottomMenu';
 
-const SignDetailScreen = ({ route }) => {
-    const { sign } = route.params; // Odbierz dane o znaku przekazane przez nawigację
+const SignDetailScreen = ({ route, navigation }) => {
+    const { sign } = route.params;
+
+const capitalizeFirstLetter = (text) => {
+    if (!text) return '';
+    return text.charAt(0).toUpperCase() + text.slice(1);
+};
+
+
 
     return (
         <View style={styles.container}>
-            {/* Wyświetlenie obrazu znaku */}
-            <Image source={{ uri: sign.imageUrl }} style={styles.image} />
+            <Header title="OPIS ZNAKU" />
+            <ScrollView contentContainerStyle={styles.scrollContent}>
+               
+                <Image source={{ uri: sign.imageUrl }} style={styles.image} />
+                
+               
+                <Text style={styles.code}>{capitalizeFirstLetter(sign.name)}</Text>
 
-            {/* Wyświetlenie informacji o znaku */}
-            <Text style={styles.title}>{sign.name}</Text>
-            <Text style={styles.description}>{sign.description}</Text>
+                
+          
+                <Text style={styles.title}>{sign.title || 'Brak nazwy'}</Text>
+                
+               
+                <Text style={styles.description}>{sign.description || 'Brak opisu'}</Text>
+            </ScrollView>
+            <BottomMenu navigation={navigation} />
         </View>
     );
 };
@@ -19,25 +38,35 @@ const SignDetailScreen = ({ route }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 16,
-        alignItems: 'center',
         backgroundColor: '#fff',
     },
+    scrollContent: {
+        padding: 16,
+        alignItems: 'center',
+    },
     image: {
-        width: '80%',
+        width: '100%',
         height: 200,
         resizeMode: 'contain',
         marginBottom: 16,
     },
-    title: {
+    code: {
         fontSize: 24,
         fontWeight: 'bold',
+        color: '#333',
         marginBottom: 8,
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#555',
+        marginBottom: 16,
     },
     description: {
         fontSize: 16,
-        textAlign: 'center',
-        color: '#555',
+        textAlign: 'justify', 
+        color: '#777',
     },
 });
 
