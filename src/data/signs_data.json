@@ -542,144 +542,1322 @@
     "mandatory": [
         {
             "name": "c_1",
-            "image": "/api/image/prohibition/c_1.png",
+            "image": "/api/image/mandatory/c_1.png",
             "title": "Nakaz skrętu w prawo przed znakiem",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy.\nNależy on do grupy znaków drogowych pionowych. Obowiązują dla nich następujące reguły:\n1. znak drogowy pionowy umieszczony po prawej stronie jezdni lub nad jezdnią dotyczy kierujących znajdujących się na wszystkich pasach ruchu; jeżeli jednak znaki są umieszczone nad poszczególnymi pasami ruchu, to znak dotyczy tylko kierujących znajdujących się na pasie, nad którym znak jest umieszczony. Znak umieszczony po lewej stronie jezdni lub pasów ruchu stanowi z kolei powtórzenie znaku umieszczonego po prawej stronie, chyba że przepisy szczególne stanowią inaczej.\n2. kierujący jest obowiązany stosować się do znaku drogowego pionowego umieszczonego na wysyłającym żółte sygnały błyskowe pojeździe, który wykonuje na drodze prace porządkowe, remontowe lub modernizacyjne."
         },
         {
             "name": "c_2",
-            "image": "/api/image/prohibition/c_2.png",
+            "image": "/api/image/mandatory/c_2.png",
             "title": "Nakaz skrętu w prawo za znakiem",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy.\nNależy on do grupy znaków drogowych pionowych. Obowiązują dla nich następujące reguły:\n1. znak drogowy pionowy umieszczony po prawej stronie jezdni lub nad jezdnią dotyczy kierujących znajdujących się na wszystkich pasach ruchu; jeżeli jednak znaki są umieszczone nad poszczególnymi pasami ruchu, to znak dotyczy tylko kierujących znajdujących się na pasie, nad którym znak jest umieszczony. Znak umieszczony po lewej stronie jezdni lub pasów ruchu stanowi z kolei powtórzenie znaku umieszczonego po prawej stronie, chyba że przepisy szczególne stanowią inaczej.\n2. kierujący jest obowiązany stosować się do znaku drogowego pionowego umieszczonego na wysyłającym żółte sygnały błyskowe pojeździe, który wykonuje na drodze prace porządkowe, remontowe lub modernizacyjne."
         },
         {
             "name": "c_3",
-            "image": "/api/image/prohibition/c_3.png",
+            "image": "/api/image/mandatory/c_3.png",
             "title": "Nakaz skrętu w lewo przed znakiem",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy.\nNależy on do grupy znaków drogowych pionowych. Obowiązują dla nich następujące reguły:\n1. znak drogowy pionowy umieszczony po prawej stronie jezdni lub nad jezdnią dotyczy kierujących znajdujących się na wszystkich pasach ruchu; jeżeli jednak znaki są umieszczone nad poszczególnymi pasami ruchu, to znak dotyczy tylko kierujących znajdujących się na pasie, nad którym znak jest umieszczony. Znak umieszczony po lewej stronie jezdni lub pasów ruchu stanowi z kolei powtórzenie znaku umieszczonego po prawej stronie, chyba że przepisy szczególne stanowią inaczej.\n2. kierujący jest obowiązany stosować się do znaku drogowego pionowego umieszczonego na wysyłającym żółte sygnały błyskowe pojeździe, który wykonuje na drodze prace porządkowe, remontowe lub modernizacyjne."
         },
         {
             "name": "c_4",
-            "image": "/api/image/prohibition/c_4.png",
+            "image": "/api/image/mandatory/c_4.png",
             "title": "Nakaz skrętu w lewo za znakiem",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_5",
-            "image": "/api/image/prohibition/c_5.png",
+            "image": "/api/image/mandatory/c_5.png",
             "title": "Nakaz jazdy na wprost",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_6",
-            "image": "/api/image/prohibition/c_6.png",
+            "image": "/api/image/mandatory/c_6.png",
             "title": "Nakaz jazdy prosto lub skrętu w prawo",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_7",
-            "image": "/api/image/prohibition/c_7.png",
+            "image": "/api/image/mandatory/c_7.png",
             "title": "Nakaz jazdy prosto lub skrętu w lewo",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_8",
-            "image": "/api/image/prohibition/c_8.png",
+            "image": "/api/image/mandatory/c_8.png",
             "title": "Nakaz skrętu w lewo lub w prawo",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_9",
-            "image": "/api/image/prohibition/c_9.png",
+            "image": "/api/image/mandatory/c_9.png",
             "title": "Nakaz jazdy z prawej strony znaku",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_10",
-            "image": "/api/image/prohibition/c_10.png",
+            "image": "/api/image/mandatory/c_10.png",
             "title": "Nakaz jazdy z lewej strony znaku.",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_11",
-            "image": "/api/image/prohibition/c_11.png",
+            "image": "/api/image/mandatory/c_11.png",
             "title": "Nakaz jazdy z prawej lub lewej strony znaku",
             "description": "Zobowiązuje kierującego do ruchu w kierunku zgodnym ze strzałkami. Znaki te mogą być umieszczone na przedłużeniu osi drogi (jezdni) lub na samej jezdni. Znak obowiązuje na najbliższym skrzyżowaniu lub w miejscu, gdzie występuje możliwość zmiany kierunku jazdy."
         },
         {
             "name": "c_12",
-            "image": "/api/image/prohibition/c_.png12",
+            "image": "/api/image/mandatory/c_.png12",
             "title": "Ruch okrężny",
             "description": "Oznacza, że na skrzyżowaniu ruch odbywa się dookoła wyspy lub placu w kierunku wskazanym na znaku. Znak C-12 występujący łącznie ze znakiem A-7 oznacza pierwszeństwo kierującego znajdującego się na skrzyżowaniu przed kierującym wjeżdżającym (wchodzącym) na to skrzyżowanie.\nNależy on do grupy znaków drogowych pionowych. Obowiązują dla nich następujące reguły:\n1. znak drogowy pionowy umieszczony po prawej stronie jezdni lub nad jezdnią dotyczy kierujących znajdujących się na wszystkich pasach ruchu; jeżeli jednak znaki są umieszczone nad poszczególnymi pasami ruchu, to znak dotyczy tylko kierujących znajdujących się na pasie, nad którym znak jest umieszczony. Znak umieszczony po lewej stronie jezdni lub pasów ruchu stanowi z kolei powtórzenie znaku umieszczonego po prawej stronie, chyba że przepisy szczególne stanowią inaczej.\n2. kierujący jest obowiązany stosować się do znaku drogowego pionowego umieszczonego na wysyłającym żółte sygnały błyskowe pojeździe, który wykonuje na drodze prace porządkowe, remontowe lub modernizacyjne."
         },
         {
             "name": "c_13",
-            "image": "/api/image/prohibition/c_13.png",
+            "image": "/api/image/mandatory/c_13.png",
             "title": "Droga dla rowerów",
             "description": "Oznacza drogę przeznaczoną dla kierujących rowerami jednośladowymi, którzy są obowiązani do korzystania z tej drogi."
         },
         {
             "name": "c_13a",
-            "image": "/api/image/prohibition/c_13a.png",
+            "image": "/api/image/mandatory/c_13a.png",
             "title": "Koniec drogi dla rowerów",
             "description": "Oznacza koniec drogi przeznaczonej dla kierujących rowerami jednośladowymi."
         },
         {
             "name": "c_14",
-            "image": "/api/image/prohibition/c_14.png",
+            "image": "/api/image/mandatory/c_14.png",
             "title": "Nakaz utrzymywania prędkości minimalnej",
             "description": "Oznacza, że kierujący, przy zachowaniu ograniczeń prędkości wynikających z przepisów szczegółowych, jest obowiązany jechać z prędkością nie mniejszą niż określona na znaku liczbą kilometrów na godzinę, chyba że warunki ruchu lub jego bezpieczeństwo wymagają zmniejszenia prędkości."
         },
         {
             "name": "c_15",
-            "image": "/api/image/prohibition/c_15.png",
+            "image": "/api/image/mandatory/c_15.png",
             "title": "Koniec obowiązywania nakazu utrzymywania prędkości minimalnej",
             "description": "Oznacza miejsce, w którym prędkość minimalna określona znakiem C-14 przestaje obowiązywać."
         },
         {
             "name": "c_16",
-            "image": "/api/image/prohibition/c_16.png",
+            "image": "/api/image/mandatory/c_16.png",
             "title": "Droga dla pieszych",
             "description": "Oznacza drogę lub jej część przeznaczoną dla pieszych, którzy są obowiązani z niej korzystać."
         },
         {
             "name": "c_16a",
-            "image": "/api/image/prohibition/c_16a.png",
+            "image": "/api/image/mandatory/c_16a.png",
             "title": "Koniec drogi dla pieszych",
             "description": "Oznacza koniec drogi przeznaczonej dla pieszych."
         },
         {
             "name": "c_17",
-            "image": "/api/image/prohibition/c_17.png",
+            "image": "/api/image/mandatory/c_17.png",
             "title": "Nakazany kierunek jazdy dla pojazdów z towarami niebezpiecznymi",
             "description": "Oznacza obowiązujący, wskazany znakami C-2, C-4, C-5, C-6, C-7 lub C-8, kierunek jazdy na skrzyżowaniu pojazdów przewożących materiały niebezpieczne."
         },
         {
             "name": "c_18",
-            "image": "/api/image/prohibition/c_18.png",
+            "image": "/api/image/mandatory/c_18.png",
             "title": "Nakaz stosowania łańcuchów przeciwśniegowych",
             "description": "Oznacza, że na drodze, na której znak został umieszczony, kierujący pojazdem silnikowym jest obowiązany stosować łańcuchy przeciwpoślizgowe na co najmniej dwóch kołach napędowych; umieszczona pod znakiem tabliczka oznacza, że znak dotyczy pojazdów określonych na tabliczce."
         },
         {
             "name": "c_19",
-            "image": "/api/image/prohibition/c_19.png",
+            "image": "/api/image/mandatory/c_19.png",
             "title": "Koniec nakazu stosowania łańcuchów przeciwśniegowych",
             "description": "Oznacza miejsce, w którym nakaz określony znakiem C-18 przestaje obowiązywać."
         }
     ],
     "informative": [
-
+        {
+            "name": "d_1",
+            "image": "/api/image/informative/d_1.png",
+            "title": "Droga z pierwszeństwem",
+            "description": "Oznacza początek lub kontynuację drogi z pierwszeństwem."
+        },
+        {
+            "name": "d_2",
+            "image": "/api/image/informative/d_2.png",
+            "title": "Koniec drogi z pierwszeństwem",
+            "description": "Znak oznacza odwołanie pierwszeństwa nadanego znakiem D-1 \"droga z pierwszeństwem\"."
+        },
+        {
+            "name": "d_3",
+            "image": "/api/image/informative/d_3.png",
+            "title": "Droga jednokkierunkowa",
+            "description": "1. oznacza początek lub kontynuację drogi lub jezdni, na której ruch odbywa się w jednym kierunku.\n2. umieszczona pod znakiem tabliczka T-22 wskazuje, że ruch rowerów jednośladowych na wyznaczonym na jezdni pasie ruchu przeznaczonym dla tych pojazdów odbywa się w kierunku przeciwnym do wskazanego na znaku."
+        },
+        {
+            "name": "d_4a",
+            "image": "/api/image/informative/d_4a.png",
+            "title": "Droga bez przejazdu",
+            "description": "Oznacza początek drogi bez przejazdu"
+        },
+        {
+            "name": "d_4b",
+            "image": "/api/image/informative/d_4b.png",
+            "title": "Wjazd na drogę bez przejazdu",
+            "description": "Oznacza, że droga za skrzyżowaniem po stronie wskazanej na znaku jest drogą bez przejazdu."
+        },
+        {
+            "name": "d_5",
+            "image": "/api/image/informative/d_5.png",
+            "title": "Pierwszeństwo na zwężonym odcinku drogi",
+            "description": "Oznacza, że kierujący przejeżdżają lub przechodzą przed kierującymi zbliżającymi się z kierunku przeciwnego."
+        },
+        {
+            "name": "d_6",
+            "image": "/api/image/informative/d_6.png",
+            "title": "Przejście dla pieszych",
+            "description": "Oznacza miejsce przeznaczone do przechodzenia pieszych w poprzek drogi.\nKierujący pojazdem zbliżający się do miejsca oznaczonego znakiem jest obowiązany zmniejszyć prędkość tak, aby nie narazić na niebezpieczeństwo pieszych znajdujących się w tych miejscach lub na nie wchodzących.\nUmieszczona pod znakiem tabliczka T-27 wskazuje, że przejście dla pieszych jest szczególnie uczęszczane przez dzieci."
+        },
+        {
+            "name": "d_6a",
+            "image": "/api/image/informative/d_6a.png",
+            "title": "Przejazd dla rowerzystów",
+            "description": "Oznacza miejsce przeznaczone do przejeżdżania rowerzystów w poprzek drogi. Kierujący pojazdem zbliżający się do miejsca oznaczonego znakiem jest obowiązany zmniejszyć prędkość tak, aby nie narazić na niebezpieczeństwo rowerzystów znajdujących się w tych miejscach lub na nie wjeżdżających."
+        },
+        {
+            "name": "d_6b",
+            "image": "/api/image/informative/d_6b.png",
+            "title": "Przejście dla pieszych i przejazd dla rowerzystów",
+            "description": "Oznacza miejsce przeznaczone do przechodzenia pieszych i przejeżdżania rowerzystów w poprzek drogi. Kierujący pojazdem zbliżający się do miejsca oznaczonego znakiem jest obowiązany zmniejszyć prędkość tak, aby nie narazić na niebezpieczeństwo pieszych znajdujących się w tych miejscach lub na nie wchodzących oraz rowerzystów znajdujących się w tych miejscach lub na nie wjeżdżających.\nUmieszczona pod znakiem tabliczka T-27 wskazuje, że przejście dla pieszych jest szczególnie uczęszczane przez dzieci."
+        },
+        {
+            "name": "d_7",
+            "image": "/api/image/informative/d_7.png",
+            "title": "Droga ekspresowa",
+            "description": "Oznacza początek lub kontynuację drogi ekspresowej. Umieszczona pod znakiem tabliczka T-1a wskazuje odległość do początku lub końca drogi."
+        },
+        {
+            "name": "d_8",
+            "image": "/api/image/informative/d_8.png",
+            "title": "Koniec drogi ekspresowej",
+            "description": "Oznacza koniec drogi ekspresowej. Umieszczona pod znakiem tabliczka T-1a wskazuje odległość do początku lub końca drogi."
+        },
+        {
+            "name": "d_9",
+            "image": "/api/image/informative/d_9.png",
+            "title": "Autostrada",
+            "description": "Oznacza początek lub kontynuację autostrady.\nUmieszczona pod znakiem tabliczka T-1a wskazuje odległość do początku lub końca drogi."
+        },
+        {
+            "name": "d_10",
+            "image": "/api/image/informative/d_10.png",
+            "title": "Koniec autostrady",
+            "description": "Oznacza koniec autostrady.\nUmieszczona pod znakiem tabliczka T-1a wskazuje odległość do początku lub końca drogi."
+        },
+        {
+            "name": "d_11",
+            "image": "/api/image/informative/d_11.png",
+            "title": "Początek pasa ruchu dla autobusów",
+            "description": "Oznacza początek pasa ruchu przeznaczonego tylko dla autobusów lub trolejbusów oraz innych pojazdów wykonujących odpłatny przewóz osób na regularnych liniach.\nUmieszczony na znaku napis TAXI oznacza, że na pasie oznaczonym tym znakiem jest dopuszczony ruch taksówek."
+        },
+        {
+            "name": "d_12",
+            "image": "/api/image/informative/d_12.png",
+            "title": "Pas ruchu dla autobusów",
+            "description": "Oznacza kontynuację pasa ruchu przeznaczonego tylko dla autobusów lub trolejbusów oraz innych pojazdów wykonujących odpłatny przewóz osób na regularnych liniach.\nUmieszczony na znaku napis TAXI oznacza, że na pasie oznaczonym tym znakiem jest dopuszczony ruch taksówek."
+        },
+        {
+            "name": "d_13",
+            "image": "/api/image/informative/d_13.png",
+            "title": "Początek pasa ruchu powolnego",
+            "description": "Oznacza początek pasa ruchu, z którego są obowiązani korzystać kierujący pojazdami nieosiągającymi na wzniesieniu minimalnej prędkości określonej na znaku liczbą kilometrów na godzinę."
+        },
+        {
+            "name": "d_14",
+            "image": "/api/image/informative/d_14.png",
+            "title": "Koniec pasa ruchu powolnego",
+            "description": "Oznacza koniec skrajnego pasa ruchu, znajdującego się po stronie wskazanej na znaku.\nZnak D-14 umieszczony przy pasie ruchu powolnego oznacza koniec tego pasa ruchu.\nUmieszczona pod znakiem tabliczka T-1a wskazuje odległość do początku lub końca pasa ruchu."
+        },
+        {
+            "name": "d_15",
+            "image": "/api/image/informative/d_15.png",
+            "title": "Przystanek autobusowy",
+            "description": "Oznacza miejsce zatrzymywania się wskazanych na znaku pojazdów wykonujących odpłatny przewóz osób na regularnych liniach."
+        },
+        {
+            "name": "d_16",
+            "image": "/api/image/informative/d_16.png",
+            "title": "Przystanek trolejbusowy",
+            "description": "Oznacza miejsce zatrzymywania się wskazanych na znaku pojazdów wykonujących odpłatny przewóz osób na regularnych liniach."
+        },
+        {
+            "name": "d_17",
+            "image": "/api/image/informative/d_17.png",
+            "title": "Przystanek tramwajowy",
+            "description": "Oznacza miejsce zatrzymywania się wskazanych na znaku pojazdów wykonujących odpłatny przewóz osób na regularnych liniach."
+        },
+        {
+            "name": "d_18",
+            "image": "/api/image/informative/d_18.png",
+            "title": "Parking",
+            "description": "1. oznacza miejsce przeznaczone na postój pojazdów (zespołów pojazdów), z wyjątkiem przyczep kempingowych.\nUmieszczona pod znakiem tabliczka T-23e oznacza, że na parkingu jest dopuszczony także postój przyczep kempingowych.\n2. umieszczona pod znakiem D-18 tabliczka T-30 wskazuje sposób ustawienia pojazdu względem krawędzi jezdni oznaczonej na tabliczce barwą szarą oraz że miejsce jest przeznaczone dla pojazdów samochodowych o dopuszczalnej masie całkowitej nieprzekraczającej 2,5 t.\n3. umieszczona pod znakiem D-18 tabliczka T-3a wskazuje koniec miejsca przeznaczonego na postój. Umieszczona pod znakiem tabliczka T-29 informuje o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej oraz dla kierującego pojazdem przewożącego taką osobę.\nZnak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_18a",
+            "image": "/api/image/informative/d_18a.png",
+            "title": "Parking - miejsce zastrzeżone",
+            "description": "Oznacza miejsce przeznaczone na postój pojazdu uprawnionej osoby. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_18b",
+            "image": "/api/image/informative/d_18b.png",
+            "title": "Parking zadaszony",
+            "description": "Oznacza miejsce przeznaczone na postój pojazdów znajdujące się w budynku lub pod wiatą. Umieszczona pod znakiem tabliczka T-29 informuje o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej oraz dla kierującego pojazdem przewożącego taką osobę. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_19",
+            "image": "/api/image/informative/d_19.png",
+            "title": "Postój taksówek",
+            "description": "Oznacza miejsce przeznaczone na postój taksówek osobowych, z wyjątkiem taksówek zajętych.\nUmieszczony dodatkowo na znaku napis BAGAŻOWE wskazuje, że znak ten dotyczy taksówek bagażowych. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_20",
+            "image": "/api/image/informative/d_20.png",
+            "title": "Koniec postoju taksówek",
+            "description": "Oznacza miejsce, w którym kończy się postój taksówek.\nJeżeli na postoju taksówek nie umieszczono znaku D-20, to kończy się on w odległości nie większej niż 20 m przed znakiem D-19. Umieszczony dodatkowo na znaku napis BAGAŻOWE wskazuje, że znak ten dotyczy taksówek bagażowych. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_21",
+            "image": "/api/image/informative/d_21.png",
+            "title": "Szpital",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_21a",
+            "image": "/api/image/informative/d_21a.png",
+            "title": "Policja",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_22",
+            "image": "/api/image/informative/d_22.png",
+            "title": "Punkt opatrunkowy",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_23",
+            "image": "/api/image/informative/d_23.png",
+            "title": "Stacja paliwowa",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Umieszczony w dolnej części znaku napis LPG GAZ informuje, że stacja prowadzi także sprzedaż gazu do napędu pojazdów."
+        },
+        {
+            "name": "d_23a",
+            "image": "/api/image/informative/d_23a.png",
+            "title": "Stacja paliwowa tylko z gazem do napędu pojazdów",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_24",
+            "image": "/api/image/informative/d_24.png",
+            "title": "Telefon",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_25",
+            "image": "/api/image/informative/d_25.png",
+            "title": "Poczta",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Umieszczony na znaku symbol słuchawki telefonicznej informuje, że na poczcie znajduje się ogólnodostępny telefon.\nZnak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_26",
+            "image": "/api/image/informative/d_26.png",
+            "title": "Stacja obsługi technicznej",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_26a",
+            "image": "/api/image/informative/d_26a.png",
+            "title": "Warsztat wulkanizacyjny",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_26b",
+            "image": "/api/image/informative/d_26b.png",
+            "title": "Myjnia",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_26c",
+            "image": "/api/image/informative/d_26c.png",
+            "title": "Toaleta publiczna",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Umieszczony w dolnej części znaku napis BUS informuje o możliwości opróżniania toalet zainstalowanych w pojazdach."
+        },
+        {
+            "name": "d_26d",
+            "image": "/api/image/informative/d_26d.png",
+            "title": "Natrysk",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_27",
+            "image": "/api/image/informative/d_27.png",
+            "title": "Bufet lub kawiarnia",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_28",
+            "image": "/api/image/informative/d_28.png",
+            "title": "Restauracja",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_29",
+            "image": "/api/image/informative/d_29.png",
+            "title": "Hotel",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_30",
+            "image": "/api/image/informative/d_30.png",
+            "title": "Obozowisko",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_31",
+            "image": "/api/image/informative/d_31.png",
+            "title": "Obozowisko (kemping) wyposażone w podłączenia elektryczne do przyczep",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_32",
+            "image": "/api/image/informative/d_32.png",
+            "title": "Pole biwakowe",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_33",
+            "image": "/api/image/informative/d_33.png",
+            "title": "Schronisko młodzieżowe",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_34",
+            "image": "/api/image/informative/d_34.png",
+            "title": "Punkt informacji turystycznej",
+            "description": "Informuje o wskazanym na znaku obiekcie znajdującym się przy drodze. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_34a",
+            "image": "/api/image/informative/d_34a.png",
+            "title": "Informacja radiowa o ruchu drogowym",
+            "description": "Informuje o stacjach radiowych podających informacje o warunkach ruchu drogowego."
+        },
+        {
+            "name": "d_35",
+            "image": "/api/image/informative/d_35.png",
+            "title": "Przejście podziemne dla pieszych",
+            "description": "Informuje o możliwości przechodzenia pieszych pod jezdnią lub nad jezdnią w sposób wskazany na znaku."
+        },{
+            "name": "d_35a",
+            "image": "/api/image/informative/d_35a.png",
+            "title": "Schody ruchome w dół",
+            "description": "Informuje o możliwości przechodzenia pieszych pod jezdnią lub nad jezdnią w sposób wskazany na znaku."
+        },{
+            "name": "d_36",
+            "image": "/api/image/informative/d_36a.png",
+            "title": "Przejście nadziemne dla pieszych",
+            "description": "Informuje o możliwości przechodzenia pieszych pod jezdnią lub nad jezdnią w sposób wskazany na znaku."
+        },
+        {
+            "name": "d_36a",
+            "image": "/api/image/informative/d_36a.png",
+            "title": "Schody ruchoe w górę",
+            "description": "Informuje o możliwości przechodzenia pieszych pod jezdnią lub nad jezdnią w sposób wskazany na znaku."
+        },
+        {
+            "name": "d_37",
+            "image": "/api/image/informative/d_37.png",
+            "title": "Tunel",
+            "description": "Oznacza wjazd do tunelu."
+        },
+        {
+            "name": "d_38",
+            "image": "/api/image/informative/d_38.png",
+            "title": "Koniec tunelu",
+            "description": "Oznacza wyjazd z tunelu."
+        },
+        {
+            "name": "d_39",
+            "image": "/api/image/informative/d_39.png",
+            "title": "Dopuszczalne prędkości",
+            "description": "1. Znak D-39 dopuszczalne prędkości informuje o dopuszczalnych prędkościach obowiązujących na terytorium Rzeczypospolitej Polskiej.\n2. Na przejściu granicznym mogą być umieszczone tablice z napisami lub symbolami, podające informacje o obowiązujących na terytorium Rzeczypospolitej Polskiej przepisach ruchu drogowego."
+        },
+        {
+            "name": "d_39a",
+            "image": "/api/image/informative/d_39a.png",
+            "title": "Opłaty drogowe",
+            "description": "Stosuje się na drogach w pobliżu granicy państwa, albo na przejściu granicznym lub parkingu położonym w pobliżu tego przejścia granicznego w celu poinformowania osób wjeżdżających na terytorium Rzeczypospolitej Polskiej o opłatach wnoszonych za przejazd po drogach publicznych.\nDopuszcza się umieszczenie na tarczy tego znaku w trzecim wierszu tekstu pod napisami w języku polskim i języku angielskim, napisu w języku państwa, do którego droga prowadzi przez przejście graniczne."
+        },
+        {
+            "name": "d_40",
+            "image": "/api/image/informative/d_40.png",
+            "title": "Strefa zamieszkania",
+            "description": "Oznacza wjazd do strefy zamieszkania.\nZnak może być umieszczony w innym miejscu niż po prawej stronie jezdni.\n\nW strefie zamieszkania:\n1.pieszy korzysta z całej szerokości drogi i ma pierwszeństwo przed pojazdem,\n2. zabrania się postoju pojazdu w innym miejscu niż wyznaczone w tym celu,\n3.prędkość dopuszczalna pojazdu lub zespołu pojazdów wynosi 20 km/h,\n4.progi zwalniające nie są oznakowane znakami ograniczającymi szybkość,\n5.przy wyjeździe pojazdu na drogę publiczną następuje włączanie się do ruchu,\n6.nadzór nad zarządzaniem ruchem na drogach (w strefie) sprawuje Wojewoda."
+        },
+        {
+            "name": "d_41",
+            "image": "/api/image/informative/d_41.png",
+            "title": "Koniec strefy zamieszkania",
+            "description": "Oznacza wyjazd ze strefy zamieszkania.\nZnak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_42",
+            "image": "/api/image/informative/d_42.png",
+            "title": "Obszar zabudowany",
+            "description": "Oznacza wjazd na obszar zabudowany."
+        },
+        {
+            "name": "d_43",
+            "image": "/api/image/informative/d_43.png",
+            "title": "Koniec obszaru zabudowanego",
+            "description": "Oznacza wyjazd z obszaru zabudowanego."
+        },
+        {
+            "name": "d_44",
+            "image": "/api/image/informative/d_44.png",
+            "title": "Strefa parkowania",
+            "description": "Oznacza wjazd do strefy, w której za postój pojazdu jest pobierana opłata. W strefie tej zabroniony jest postój pojazdu bez wniesienia opłaty, z wyjątkiem postoju pojazdów osób lub jednostek, dla których ustalona została zerowa stawka opłaty, oraz postoju pojazdów komunikacji publicznej na wyznaczonych dla nich miejscach."
+        },
+        {
+            "name": "d_45",
+            "image": "/api/image/informative/d_45.png",
+            "title": "Koniec strefy parkowania",
+            "description": "Wyjazd ze strefy parkowania."
+        },
+        {
+            "name": "d_46",
+            "image": "/api/image/informative/d_46.png",
+            "title": "Droga wewnętrzna",
+            "description": "Oznacza początek ogólnodostępnej drogi niepublicznej; napis umieszczony na znaku wskazuje zarządcę tej drogi. Znak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_47",
+            "image": "/api/image/informative/d_47.png",
+            "title": "Koniec drogi wewnętrznej",
+            "description": "Oznacza wyjazd z drogi wewnętrznej na drogę publiczną.\nZnak może być umieszczony w innym miejscu niż po prawej stronie jezdni."
+        },
+        {
+            "name": "d_48",
+            "image": "/api/image/informative/d_48.png",
+            "title": "Zmiana pierwszeństwa",
+            "description": "Uprzedza o mającej nastąpić lub niedawno wprowadzonej zmianie obowiązujących dotychczas zasad pierwszeństwa na najbliższym skrzyżowaniu.\nUmieszczony pod znakiem napis określa datę wprowadzenia nowej zasady pierwszeństwa pokazanej znakiem A-5 lub A-7."
+        },
+        {
+            "name": "d_49",
+            "image": "/api/image/informative/d_49.png",
+            "title": "Pobór opłat",
+            "description": "Uprzedza o miejscu, w którym są pobierane opłaty za przejazd."
+        },
+        {
+            "name": "d_50",
+            "image": "/api/image/informative/d_50.png",
+            "title": "Zatoka",
+            "description": "Informuje o zatoce występującej w tunelu. Umieszczona pod znakiem tabliczka T-33 lub umieszczony na znaku napis SOS informuje, że w zatoce znajduje się telefon alarmowy i gaśnica."
+        },
+        {
+            "name": "d_51",
+            "image": "/api/image/informative/d_51.png",
+            "title": "Automatyczna kontrola prędkości",
+            "description": "Uprzedza o miejscu lub odcinku drogi, na którym prędkość jazdy jest kontrolowana i rejestrowana przez urządzenia działające samoczynnie."
+        },
+        {
+            "name": "d_52",
+            "image": "/api/image/informative/d_52.png",
+            "title": "Strefa ruchu",
+            "description": "Stosuje się w celu oznakowania ustalonej strefy ruchu.\nZnak ten umieszcza się na początku strefy ruchu na wszystkich drogach doprowadzających do niej ruch. Decyzję o ustaleniu takiej strefy podejmuje zarządca (właściciel) terenu, na którym położona jest strefa ruchu. W strefie ruchu stosuje się znaki takie jak na drogach wewnętrznych."
+        },
+        {
+            "name": "d_53",
+            "image": "/api/image/informative/d_53.png",
+            "title": "Koniec strefy ruchu",
+            "description": "Stosuje się w celu wskazania wyjazdu z drogi wewnętrznej położonej w strefie ruchu na drogę publiczną zarządzaną przez administrację rządową lub samorządową.\nZnak ten umieszcza się na wszystkich drogach wylotowych ze strefy oznakowanej znakami D-52, w tym samym przekroju poprzecznym drogi co znak D-52.\nZnak ten może być umieszczony po lewej stronie jezdni, na odwrotnej stronie znaku D-52. Znak zakazu umieszczony pod znakiem D-52 strefa ruchu oznacza, że zakaz obowiązuje do znaku D-53-koniec strefy ruchu, z wyjątkiem odcinka drogi, na którym został on zmieniony lub odwołany innym znakiem."
+        }        
     ],
     "direction": [
-        
+        {
+            "name": "e_1",
+            "image": "/api/image/direction/e_1.png",
+            "title": "Tablica przeddrogowskazowa",
+            "description": ""
+        },
+        {
+            "name": "e_1a",
+            "image": "/api/image/direction/e_1a.png",
+            "title": "Tablica przeddrogowskazowa na autostradzie",
+            "description": ""
+        },
+        {
+            "name": "e_1b",
+            "image": "/api/image/direction/e_1b.png",
+            "title": "Tablica przeddrogowskazowa przed wjazdem na autostradę",
+            "description": ""
+        }, {
+            "name": "e_2a",
+            "image": "/api/image/direction/e_2a.png",
+            "title": "Drogowskaz tablicowy umieszczany obok jezdni",
+            "description": ""
+        },
+        {
+            "name": "e_2b",
+            "image": "/api/image/direction/e_2b.png",
+            "title": "Drogowskaz tablicowy umieszczany nad jezdnią",
+            "description": ""
+        },
+        {
+            "name": "e_2c",
+            "image": "/api/image/direction/e_2c.png",
+            "title": "Drogowskaz tablicowy umieszczany obok jezdni na autostradzie",
+            "description": ""
+        },
+        {
+            "name": "e_2d",
+            "image": "/api/image/direction/e_2d.png",
+            "title": "Drogowskaz tablicowy umieszczany nad jezdnią na autostradzie",
+            "description": ""
+        },
+        {
+            "name": "e_2e",
+            "image": "/api/image/direction/e_2e.png",
+            "title": "Drogowskaz tablicowy umieszczany obok jezdni przed wjazdem na autostradę",
+            "description": ""
+        },
+        {
+            "name": "e_2f",
+            "image": "/api/image/direction/e_2f.png",
+            "title": "Drogowskaz tablicowy umieszczany nad jezdnią przed wjazdem na autostradę",
+            "description": ""
+        },
+        {
+            "name": "e_3",
+            "image": "/api/image/direction/e_3.png",
+            "title": "Drogowskaz w kształcie strzały do miejscowości wskazujący numer drogi",
+            "description": ""
+        },
+        {
+            "name": "e_4",
+            "image": "/api/image/direction/e_4.png",
+            "title": "Drogowskaz w kształcie strzały do miejscowości podający do niej odległość",
+            "description": ""
+        },
+        {
+            "name": "e_5",
+            "image": "/api/image/direction/e_5.png",
+            "title": "Drogowskaz do dzielnicy miasta",
+            "description": ""
+        },
+        {
+            "name": "e_5a",
+            "image": "/api/image/direction/e_5a.png",
+            "title": "Drogowskaz do centrum",
+            "description": ""
+        },
+        {
+            "name": "e_6",
+            "image": "/api/image/direction/e_6.png",
+            "title": "Drogowskaz do lotniska",
+            "description": ""
+        },
+        {
+            "name": "e_6a",
+            "image": "/api/image/direction/e_6a.png",
+            "title": "Drogowskaz stacji kolejowej z symbolem",
+            "description": ""
+        },
+        {
+            "name": "e_6b",
+            "image": "/api/image/direction/e_6b.png",
+            "title": "Drogowskaz do dworca autobusowego",
+            "description": ""
+        },
+        {
+            "name": "e_6c",
+            "image": "/api/image/direction/e_6c.png",
+            "title": "Drogowskaz do przystani promowej",
+            "description": ""
+        },
+        {
+            "name": "e_7",
+            "image": "/api/image/direction/e_7.png",
+            "title": "Drogowskaz do przystani wodnej lub żeglugi",
+            "description": ""
+        },
+        {
+            "name": "e_8",
+            "image": "/api/image/direction/e_8.png",
+            "title": "Drogowskaz do plaży lub miejsca kąpielowego",
+            "description": ""
+        },
+        {
+            "name": "e_9",
+            "image": "/api/image/direction/e_9.png",
+            "title": "Drogowskaz do muzeum",
+            "description": ""
+        },
+        {
+            "name": "e_10",
+            "image": "/api/image/direction/e_10.png",
+            "title": "Drogowskaz do zabytku jako dobra kultury",
+            "description": ""
+        },
+        {
+            "name": "e_11",
+            "image": "/api/image/direction/e_11.png",
+            "title": "Drogowskaz do zabytku przyrody",
+            "description": ""
+        },
+        {
+            "name": "e_12",
+            "image": "/api/image/direction/e_12.png",
+            "title": "Drogowskaz do punktu widokowego",
+            "description": ""
+        },
+        {
+            "name": "e_12a",
+            "image": "/api/image/direction/e_12a.png",
+            "title": "Drogowskaz do szlaku rowerowego",
+            "description": ""
+        }, {
+            "name": "e_13",
+            "image": "/api/image/direction/e_13.png",
+            "title": "Tablica kierunkowa",
+            "description": ""
+        },
+        {
+            "name": "e_14",
+            "image": "/api/image/direction/e_14.png",
+            "title": "Tablica szlaku drogowego",
+            "description": ""
+        },
+        {
+            "name": "e_14a",
+            "image": "/api/image/direction/e_14a.png",
+            "title": "Tablica szlaku drogowego na autostradzie",
+            "description": ""
+        },
+        {
+            "name": "e_15a",
+            "image": "/api/image/direction/e_15a.png",
+            "title": "Numer drogi krajowej",
+            "description": ""
+        },
+        {
+            "name": "e_15b",
+            "image": "/api/image/direction/e_15b.png",
+            "title": "Numer drogi wojewódzkiej",
+            "description": ""
+        },
+        {
+            "name": "e_15c",
+            "image": "/api/image/direction/e_15c.png",
+            "title": "Numer autostrady",
+            "description": ""
+        },
+        {
+            "name": "e_15d",
+            "image": "/api/image/direction/e_15d.png",
+            "title": "Numer drogi ekspresowej",
+            "description": ""
+        },
+        {
+            "name": "e_15e",
+            "image": "/api/image/direction/e_15e.png",
+            "title": "Numer drogi wojewódzkiej o zwiększonym dopuszczalnym nacisku osi pojazdu (do 10 t)",
+            "description": ""
+        }, {
+            "name": "e_16",
+            "image": "/api/image/direction/e_16.png",
+            "title": "Numer szlaku międzynarodowego",
+            "description": ""
+        },
+        {
+            "name": "e_17a",
+            "image": "/api/image/direction/e_17a.png",
+            "title": "Miejscowość",
+            "description": ""
+        },
+        {
+            "name": "e_18a",
+            "image": "/api/image/direction/e_18a.png",
+            "title": "Koniec miejscowości",
+            "description": ""
+        },
+        {
+            "name": "e_19a",
+            "image": "/api/image/direction/e_19a.png",
+            "title": "Obwodnica",
+            "description": ""
+        },
+        {
+            "name": "e_20",
+            "image": "/api/image/direction/e_20.png",
+            "title": "Tablica węzła drogowego na autostradzie",
+            "description": ""
+        },
+        {
+            "name": "e_21",
+            "image": "/api/image/direction/e_21.png",
+            "title": "Dzielnica",
+            "description": ""
+        },
+        {
+            "name": "e_22a",
+            "image": "/api/image/direction/e_22a.png",
+            "title": "Samochodowy szlak turystyczny",
+            "description": ""
+        },
+        {
+            "name": "e_22b",
+            "image": "/api/image/direction/e_22b.png",
+            "title": "Obiekt na samochodowym szlaku turystycznym",
+            "description": ""
+        },
+        {
+            "name": "e_22c",
+            "image": "/api/image/direction/e_22c.png",
+            "title": "Informacja o obiektach turystycznych",
+            "description": ""
+        }        
     ],
     "complementary": [
-        
+        {
+            "name": "f_1",
+            "image": "/api/image/complementary/f_1.png",
+            "title": "Przejście graniczne",
+            "description": "Informuje o czynnym przejściu granicznym"
+        },
+        {
+            "name": "f_2",
+            "image": "/api/image/complementary/f_2.png",
+            "title": "Przekraczanie granicy zabronione.",
+            "description": "Informuje, że ruch przez granicę jest zamknięty."
+        },
+        {
+            "name": "f_2a",
+            "image": "/api/image/complementary/f_2a.png",
+            "title": "Granica państwa",
+            "description": "Informuje o miejscu przekroczenia granicy Rzeczypospolitej Polskiej."
+        },
+        {
+            "name": "f_3",
+            "image": "/api/image/complementary/f_3.png",
+            "title": "Granica obszaru administracyjnego - na granicy województwa",
+            "description": "Granica obszaru administracyjnego z napisami województwo, powiat lub gmina i umieszczonymi nazwami informuje o wjeździe odpowiednio na obszar województwa, powiatu i gminy, powiatu i gminy albo gminy."
+        },
+        {
+            "name": "f_3a",
+            "image": "/api/image/complementary/f_3a.png",
+            "title": "Granica obszaru administracyjnego",
+            "description": "Znak występujący na granicy powiatu."
+        },
+        {
+            "name": "f_3b",
+            "image": "/api/image/complementary/f_3b.png",
+            "title": "Granica obszaru administracyjnego",
+            "description": "Znak występujący na granicy gminy."
+        },
+        {
+            "name": "f_3c",
+            "image": "/api/image/complementary/f_3c.png",
+            "title": "Granica obszaru administracyjnego",
+            "description": "Znak inforuje, że miasto ma prawa powiatu."
+        },
+        {
+            "name": "f_4",
+            "image": "/api/image/complementary/f_4.png",
+            "title": "Nazwa rzeki",
+            "description": "Podaje nazwę rzeki lub innego cieku wodnego, nad którym przebiega droga."
+        },
+        {
+            "name": "f_5",
+            "image": "/api/image/complementary/f_5.png",
+            "title": "Uprzedzanie o zakazie",
+            "description": "Uprzedza o znaku zakazu umieszczonym na drodze w odległości wskazanej na znaku."
+        },
+        {
+            "name": "f_6",
+            "image": "/api/image/complementary/f_6.png",
+            "title": "Znak uprzedzający umieszczany przed skrzyżowaniem",
+            "description": "Uprzedza o wskazanym na nim odpowiednim znakiem niebezpieczeństwie lub zakazie występującym za skrzyżowaniem na wskazanej drodze."
+        },
+        {
+            "name": "f_6a",
+            "image": "/api/image/complementary/f_6a.png",
+            "title": "Wariant znaku uprzedzającego",
+            "description": "Uprzedza o wskazanym na nim odpowiednim znakiem niebezpieczeństwie lub zakazie występującym za skrzyżowaniem na wskazanej drodze."
+        },
+        {
+            "name": "f_7",
+            "image": "/api/image/complementary/f_7.png",
+            "title": "Sposób jazdy w związku z zakazem skręcania w lewo",
+            "description": "Wskazuje dojazd do drogi, w którą skręcanie w lewo jest zabronione"
+        },
+        {
+            "name": "f_8",
+            "image": "/api/image/complementary/f_8.png",
+            "title": "Objazd w związku z zamknięcie drogi",
+            "description": "Wskazuje wyznaczony objazd; jeżeli na znaku F-8 umieszczono znak zakazujący wjazdu określonych pojazdów, oznacza to, że objazd dotyczy pojazdów wskazanych na znaku zakazu."
+        },
+        {
+            "name": "f_9",
+            "image": "/api/image/complementary/f_9.png",
+            "title": "Znak proawdzący na drodze objazdowej",
+            "description": "Wskazuje kierunek ruchu pojazdów na wyznaczonym objeździe."
+        },
+        {
+            "name": "f_10",
+            "image": "/api/image/complementary/f_10.png",
+            "title": "Kierunki na pasach ruchu",
+            "description": "Wskazuje dozwolone, zgodnie ze strzałkami umieszczonymi na znaku, kierunki jazdy z poszczególnych pasów ruchu. Umieszczona na znaku strzałka zezwalająca na skręcanie w lewo ze skrajnego lewego pasa ruchu oznacza także zezwolenie na zawracanie, chyba że jest to zabronione znakiem B-23 lub ruch jest kierowany sygnalizatorem S-3."
+        },
+        {
+            "name": "f_11",
+            "image": "/api/image/complementary/f_11.png",
+            "title": "Kierunki na pasie ruchu",
+            "description": "Wskazuje dozwolone, zgodnie ze strzałkami umieszczonymi na znaku, kierunki jazdy z pasa ruchu, nad którym znak został umieszczony.\nUmieszczona na znaku strzałka zezwalająca na skręcanie w lewo ze skrajnego lewego pasa ruchu oznacza także zezwolenie na zawracanie, chyba że jest to zabronione znakiem B-23 lub ruch jest kierowany sygnalizatorem S-3."
+        },
+        {
+            "name": "f_12",
+            "image": "/api/image/complementary/f_12.png",
+            "title": "Znak wskazujący przejazd tranzytowy umieszczany przed skrzyżowaniem",
+            "description": "Wskazuje zgodnie ze strzałką kierunek przejazdu tranzytowego pojazdów wskazanych umieszczonym na znaku symbolem pojazdu."
+        },
+        {
+            "name": "f_13",
+            "image": "/api/image/complementary/f_13.png",
+            "title": "Znak wskazujący przejazd tranzytowy umieszczany na skrzyżowaniu",
+            "description": "Wskazuje zgodnie ze strzałką kierunek przejazdu tranzytowego pojazdów wskazanych umieszczonym na znaku symbolem pojazdu."
+        },
+        {
+            "name": "f_14a",
+            "image": "/api/image/complementary/f_14a.png",
+            "title": "Tablica wskaźnikowa na autostradzie umieszczana w odległości 300 m przed pasem wyłączania.",
+            "description": "Informuje o zbliżaniu się do początku pasa prowadzącego do wyjazdu z autostrady (pasa wyłączania)."
+        },
+        {
+            "name": "f_14b",
+            "image": "/api/image/complementary/f_14b.png",
+            "title": "Tablica wskaźnikowa na autostradzie umieszczana w odległości 200 m przed pasem wyłączania.",
+            "description": "Informuje o zbliżaniu się do początku pasa prowadzącego do wyjazdu z autostrady (pasa wyłączania)."
+        },
+        {
+            "name": "f_14c",
+            "image": "/api/image/complementary/f_14c.png",
+            "title": "Tablica wskaźnikowa na autostradzie umieszczana w odległości 100 m przed pasem wyłączania.",
+            "description": "Informuje o zbliżaniu się do początku pasa prowadzącego do wyjazdu z autostrady (pasa wyłączania)."
+        },
+        {
+            "name": "f_15",
+            "image": "/api/image/complementary/f_15.png",
+            "title": "Niesymetryczny podział jezdni dla przeciwnych kierunków ruchu.",
+            "description": "Wskazuje pasy ruchu przeznaczone do jazdy w podanych kierunkach."
+        },
+        {
+            "name": "f_16",
+            "image": "/api/image/complementary/f_16.png",
+            "title": "Koniec pasa ruchu na jezdni dwukierunkowej",
+            "description": "Uprzedza o końcu wewnętrznego pasa ruchu na jezdni wskazanej na znaku."
+        },
+        {
+            "name": "f_17",
+            "image": "/api/image/complementary/f_17.png",
+            "title": "Koniec pasa ruchu na jezdni jednokierunkowej",
+            "description": "Uprzedza o końcu wewnętrznego pasa ruchu na jezdni wskazanej na znaku."
+        },
+        {
+            "name": "f_18",
+            "image": "/api/image/complementary/f_18.png",
+            "title": "Przeciwny kierunek dla określonych pojazdów",
+            "description": "Wskazuje lewy pas ruchu przeznaczony tylko dla pojazdów określonych na znaku, poruszających się w kierunku przeciwnym."
+        },
+        {
+            "name": "f_19",
+            "image": "/api/image/complementary/f_19.png",
+            "title": "Pas ruchu dla określonych pojazdów",
+            "description": "Wskazuje wyznaczony na jezdni pas ruchu przeznaczony dla pojazdów wskazanych na znaku."
+        },
+        {
+            "name": "f_20",
+            "image": "/api/image/complementary/f_20.png",
+            "title": "Część drogi (pas ruchu) dla określonych pojazdów",
+            "description": "Wskazuje drogę lub jej część przeznaczoną dla pojazdów, których symbol został umieszczony na znaku.\nZamiast symbolu pojazdu o dopuszczalnej masie całkowitej do 3,5 t na znaku może być umieszczony symbol pojazdu stosowany na tabliczkach, odpowiednio do sposobu przeznaczenia drogi lub jej części."
+        },
+        {
+            "name": "f_21",
+            "image": "/api/image/complementary/f_21.png",
+            "title": "Ruch skierowany na sąsiednią jezdnię",
+            "description": "Wskazuje zjazd na sąsiednią jezdnię w związku z tymczasową organizacją ruchu."
+        },
+        {
+            "name": "f_22",
+            "image": "/api/image/complementary/f_22.png",
+            "title": "Ograniczenia na pasie ruchu",
+            "description": "Wskazuje pas ruchu, na którym jest zabroniony ruch pojazdów określonych symbolem znaku zakazu."
+        }
     ],
     "addiction": [
-        
+        {
+            "name": "t_1",
+            "image": "/api/image/addiction/t_1.png",
+            "title": "Odległość znaku ostrzegawczego od miejsca niebezpiecznego",
+            "description": ""
+        },
+        {
+            "name": "t_1a",
+            "image": "/api/image/addiction/t_1a.png",
+            "title": "Odległość znaku informacyjnego od początku (końca) drogi lub pasa ruchu",
+            "description": ""
+        },
+        {
+            "name": "t_1b",
+            "image": "/api/image/addiction/t_1b.png",
+            "title": "Długość tunelu lub odcinek drogi do końca tunelu",
+            "description": ""
+        },
+        {
+            "name": "t_2",
+            "image": "/api/image/addiction/t_2.png",
+            "title": "Długość odcinka drogi, na którym powtarza się lub występuje niebezpieczeństwo",
+            "description": ""
+        },
+        {
+            "name": "t_3",
+            "image": "/api/image/addiction/t_3.png",
+            "title": "Koniec odcinka, na którym powtarza się lub występuje niebezpieczeństwo",
+            "description": ""
+        },
+        {
+            "name": "t_3a",
+            "image": "/api/image/addiction/t_3a.png",
+            "title": "Koniec miejsca przeznaczonego na postój",
+            "description": ""
+        },
+        {
+            "name": "t_4",
+            "image": "/api/image/addiction/t_4.png",
+            "title": "Liczba zakrętów",
+            "description": ""
+        },
+        {
+            "name": "t_5",
+            "image": "/api/image/addiction/t_5.png",
+            "title": "Początek drogi krętej",
+            "description": ""
+        },
+        {
+            "name": "t_6a",
+            "image": "/api/image/addiction/t_6a.png",
+            "title": "Rzeczywisty przebieg drogi z pierwszeństwem przez skrzyżowanie",
+            "description": ""
+        },
+        {
+            "name": "t_6b",
+            "image": "/api/image/addiction/t_6b.png",
+            "title": "Układ dróg podporządkowanych",
+            "description": ""
+        },
+        {
+            "name": "t_6c",
+            "image": "/api/image/addiction/t_6c.png",
+            "title": "Rzeczywisty przebieg drogi z pierwszeństwem przez skrzyżowanie",
+            "description": ""
+        },
+        {
+            "name": "t_6d",
+            "image": "/api/image/addiction/t_6d.png",
+            "title": "Prostopadły przebieg drogi z pierwszeństwem przez skrzyżowanie oraz układ dróg podporządkowanych",
+            "description": ""
+        },
+        {
+            "name": "t_7",
+            "image": "/api/image/addiction/t_7.png",
+            "title": "Układ torów i drogi na przejeździe",
+            "description": ""
+        },
+        {
+            "name": "t_8",
+            "image": "/api/image/addiction/t_8.png",
+            "title": "Miejsce, w którym ruch pojazdów został skierowany na tory tramwajowe",
+            "description": ""
+        },
+        {
+            "name": "t_9",
+            "image": "/api/image/addiction/t_9.png",
+            "title": "Rzeczywista wielkość spadku lub wzniesienia drogi",
+            "description": ""
+        },
+        {
+            "name": "t_10",
+            "image": "/api/image/addiction/t_10.png",
+            "title": "Bocznica kolejowa lub tor o podobnym charakterze",
+            "description": ""
+        },
+        {
+            "name": "t_11",
+            "image": "/api/image/addiction/t_11.png",
+            "title": "Przeprawa promowa",
+            "description": ""
+        },
+        {
+            "name": "t_12",
+            "image": "/api/image/addiction/t_12.png",
+            "title": "Podłużny uskok nawierzchni",
+            "description": ""
+        },
+        {
+            "name": "t_13",
+            "image": "/api/image/addiction/t_13.png",
+            "title": "Odcinek drogi, na którym występują deformacje nawierzchni w postaci kolein",
+            "description": ""
+        },
+        {
+            "name": "t_14",
+            "image": "/api/image/addiction/t_14.png",
+            "title": "Miejsce częstych wypadków o charakterze wskazanym na tabliczce",
+            "description": ""
+        },
+        {
+            "name": "t_15",
+            "image": "/api/image/addiction/t_15.png",
+            "title": "Miejsce częstych wypadków spowodowanych śliską nawierzchnią jezdni ze względu na opady deszczu",
+            "description": ""
+        },
+        {
+            "name": "t_16",
+            "image": "/api/image/addiction/t_16.png",
+            "title": "Miejsce wyjazdu pojazdów uprzywilejowanych wskazanych na tabliczce",
+            "description": ""
+        },
+        {
+            "name": "t_17",
+            "image": "/api/image/addiction/t_17.png",
+            "title": "Granica państwa",
+            "description": ""
+        },
+        {
+            "name": "t_18",
+            "image": "/api/image/addiction/t_18.png",
+            "title": "Nieoczekiwana zmiana kierunku ruchu o przebiegu wskazanym na tabliczce",
+            "description": ""
+        },
+        {
+            "name": "t_19",
+            "image": "/api/image/addiction/t_19.png",
+            "title": "Malowanie znaków poziomych",
+            "description": ""
+        },
+        {
+            "name": "t_20",
+            "image": "/api/image/addiction/t_20.png",
+            "title": "Długość odcinka jezdni, na którym zakaz obowiązuje",
+            "description": ""
+        },
+        {
+            "name": "t_21",
+            "image": "/api/image/addiction/t_21.png",
+            "title": "Odległość znaku od miejsca, od którego lub w którym zakaz obowiązuje",
+            "description": ""
+        },
+        {
+            "name": "t_22",
+            "image": "/api/image/addiction/t_22.png",
+            "title": "Znak nie dotyczy rowerów jednośladowych",
+            "description": ""
+        },
+        {
+            "name": "t_23a",
+            "image": "/api/image/addiction/t_23a.png",
+            "title": "Motocykle",
+            "description": ""
+        },
+        {
+            "name": "t_23b",
+            "image": "/api/image/addiction/t_23b.png",
+            "title": "Samochody ciężarowe, pojazdy specjalne, pojazdy używane do celów specjalnych, o dopuszczalnej masie całkowitej przekraczającej 3,5 t, oraz ciągniki samochodowe",
+            "description": ""
+        },
+        {
+            "name": "t_23c",
+            "image": "/api/image/addiction/t_23c.png",
+            "title": "Ciągniki rolnicze",
+            "description": ""
+        },
+        {
+            "name": "t_23d",
+            "image": "/api/image/addiction/t_23d.png",
+            "title": "Pojazdy silnikowe z przyczepą",
+            "description": ""
+        },
+        {
+            "name": "t_23e",
+            "image": "/api/image/addiction/t_23e.png",
+            "title": "Pojazdy z przyczepą kempingową",
+            "description": ""
+        },
+        {
+            "name": "t_23f",
+            "image": "/api/image/addiction/t_23f.png",
+            "title": "Autobusy",
+            "description": ""
+        },
+        {
+            "name": "t_23g",
+            "image": "/api/image/addiction/t_23g.png",
+            "title": "Trolejbusy",
+            "description": ""
+        },
+        {
+            "name": "t_23h",
+            "image": "/api/image/addiction/t_23h.png",
+            "title": "Pojazdy z towarami niebezpiecznymi",
+            "description": ""
+        },
+        {
+            "name": "t_23i",
+            "image": "/api/image/addiction/t_23i.png",
+            "title": "Pojazdy z towarami wybuchowymi lub łatwo zapalnymi",
+            "description": ""
+        },
+        {
+            "name": "t_23j",
+            "image": "/api/image/addiction/t_23j.png",
+            "title": "Pojazdy z towarami, które mogą skazić wodę",
+            "description": ""
+        },
+        {
+            "name": "t_24",
+            "image": "/api/image/addiction/t_24.png",
+            "title": "Pozostawiony pojazd zostanie usunięty na koszt właściciela",
+            "description": ""
+        },
+        {
+            "name": "t_25a",
+            "image": "/api/image/addiction/t_25a.png",
+            "title": "Początek zakazu postoju lub zatrzymywania",
+            "description": ""
+        },
+        {
+            "name": "t_25b",
+            "image": "/api/image/addiction/t_25b.png",
+            "title": "Kontynuacja zakazu postoju lub zatrzymywania",
+            "description": ""
+        },
+        {
+            "name": "t_25c",
+            "image": "/api/image/addiction/t_25c.png",
+            "title": "Odwołanie zakazu postoju lub zatrzymywania",
+            "description": ""
+        },
+        {
+            "name": "t_26",
+            "image": "/api/image/addiction/t_26.png",
+            "title": "Zakaz postoju lub zatrzymywania dotyczy strony placu",
+            "description": ""
+        },
+        {
+            "name": "t_27",
+            "image": "/api/image/addiction/t_27.png",
+            "title": "Przejście dla pieszych jest szczególnie uczęszczane przez dzieci",
+            "description": ""
+        },
+        {
+            "name": "t_28",
+            "image": "/api/image/addiction/t_28.png",
+            "title": "Za przejazd drogą pobierana jest opłata",
+            "description": ""
+        },
+        {
+            "name": "t_29",
+            "image": "/api/image/addiction/t_29.png",
+            "title": "Informacja o miejscach dla pojazdów przewożących lub kierowanych przez osoby niepełnosprawne mające trudności w poruszaniu się",
+            "description": ""
+        },
+        {
+            "name": "t_30",
+            "image": "/api/image/addiction/t_30.png",
+            "title": "Sposób ustawienia pojazdu względem krawędzi jezdni",
+            "description": ""
+        },
+        {
+            "name": "t_31",
+            "image": "/api/image/addiction/t_31.png",
+            "title": "Kategoria tunelu",
+            "description": ""
+        },
+        {
+            "name": "t_32",
+            "image": "/api/image/addiction/t_32.png",
+            "title": "Minimalny odstęp od poprzedzającego pojazdu",
+            "description": ""
+        },
+        {
+            "name": "t_33",
+            "image": "/api/image/addiction/t_33.png",
+            "title": "Umieszczenie w zatoce telefonu alarmowego i gaśnicy",
+            "description": ""
+        },
+        {
+            "name": "t_34",
+            "image": "/api/image/addiction/t_34.png",
+            "title": "Pobór opłaty elektronicznej",
+            "description": ""
+        }        
     ],
     "railway": [
-
+        {
+            "name": "g_1a",
+            "image": "/api/image/railway/g_1a.png",
+            "title": "Słupek wskaźnikowy z trzema kreskami umieszczany po prawej stronie jezdni",
+            "description": "Pokazuje kierującym, że zbliżają się do linii kolejowej. Najczęściej znak kolejowy G-1A jest pierwszym z trzech takich słupków. Umieszcza się go bezpośrednio pod znakiem ostrzegawczym \"przejazd kolejowy z zaporami\" lub \"przejazd kolejowy bez zapór\"."
+        },
+        {
+            "name": "g_1b",
+            "image": "/api/image/railway/g_1b.png",
+            "title": "Słupek wskaźnikowy z dwiema kreskami umieszczany po prawej stronie jezdni",
+            "description": "Informuje o zbliżaniu się do przejazdu kolejowego. Słupek z dwoma kreskami jest umieszczany na 2/3 odległości znaku ostrzegawczego A-9 lub A-10 od przejazdu."
+        },
+        {
+            "name": "g_1c",
+            "image": "/api/image/railway/g_1c.png",
+            "title": "Słupek wskaźnikowy z jedną kreską umieszczany po prawej stronie jezdni",
+            "description": "Informuje o zbliżaniu się do przejazdu kolejowego. Słupek z jedną kreską jest umieszczany na 1/3 odległości znaku ostrzegawczego A-9 lub A-10 od przejazdu. Jeżeli ze względu na warunki lokalne znaki ostrzegawcze umieszczono bliżej niż w odległości (od miejsca niebezpiecznego) - 150 m na drogach, na których dopuszczalna prędkość pojazdów przekracza 60 km/h, a do 100 m na pozostałych drogach, to pod znakiem ostrzegawczym umieszcza się słupek z dwiema kreskami, a słupek z jedną kreską na 1/2 odległości znaku ostrzegawczego. Jeżeli znak ostrzegawczy umieszczono w bezpośredniej bliskości przejazdu, to stosuje się tylko słupek z jedną kreską umieszczony pod znakiem ostrzegawczym."
+        },
+        {
+            "name": "g_1d",
+            "image": "/api/image/railway/g_1d.png",
+            "title": "Słupek wskaźnikowy z trzema kreskami umieszczany po lewej stronie jezdni",
+            "description": "Informuje o zbliżaniu się do przejazdu kolejowego. Słupek z trzema kreskami jest umieszczany pod znakiem A-9 lub A-10. Jeżeli ze względu na warunki lokalne znaki ostrzegawcze umieszczono bliżej niż w odległości (od miejsca niebezpiecznego) 150 m na drogach, na których dopuszczalna prędkość pojazdów przekracza 60 km/h, a do 100 m na pozostałych drogach, to pod znakiem ostrzegawczym umieszcza się słupek z dwiema kreskami, a słupek z jedną kreską na 1/2 odległości znaku ostrzegawczego. Jeżeli znak ostrzegawczy umieszczono w bezpośredniej bliskości przejazdu, to stosuje się tylko słupek z jedną kreską umieszczony pod znakiem ostrzegawczym."
+        },
+        {
+            "name": "g_1e",
+            "image": "/api/image/railway/g_1e.png",
+            "title": "Słupek wskaźnikowy z dwiema kreskami umieszczany po lewej stronie jezdni",
+            "description": "Informuje o zbliżaniu się do przejazdu kolejowego. Słupek z dwoma kreskami jest umieszczany na 2/3 odległości znaku ostrzegawczego A-9 lub A-10 od przejazdu. Jeżeli ze względu na warunki lokalne znaki ostrzegawcze umieszczono bliżej niż w odległości (od miejsca niebezpiecznego) 150 m na drogach, na których dopuszczalna prędkość pojazdów przekracza 60 km/h, a do 100 m na pozostałych drogach, to pod znakiem ostrzegawczym umieszcza się słupek z dwiema kreskami, a słupek z jedną kreską na 1/2 odległości znaku ostrzegawczego. Jeżeli znak ostrzegawczy umieszczono w bezpośredniej bliskości przejazdu, to stosuje się tylko słupek z jedną kreską umieszczony pod znakiem ostrzegawczym."
+        },
+        {
+            "name": "g_1f",
+            "image": "/api/image/railway/g_1f.png",
+            "title": "Słupek wskaźnikowy z jedną kreską umieszczany po lewej stronie jezdni",
+            "description": "Informuje o zbliżaniu się do przejazdu kolejowego. Słupek z jedną kreską jest umieszczany na 1/3 odległości znaku ostrzegawczego A-9 lub A-10 od przejazdu. Jeżeli ze względu na warunki lokalne znaki ostrzegawcze umieszczono bliżej niż w odległości (od miejsca niebezpiecznego) - 150 m na drogach, na których dopuszczalna prędkość pojazdów przekracza 60 km/h, a do 100 m na pozostałych drogach, to pod znakiem ostrzegawczym umieszcza się słupek z dwiema kreskami, a słupek z jedną kreską na 1/2 odległości znaku ostrzegawczego. Jeżeli znak ostrzegawczy umieszczono w bezpośredniej bliskości przejazdu, to stosuje się tylko słupek z jedną kreską umieszczony pod znakiem ostrzegawczym."
+        },
+        {
+            "name": "g_2",
+            "image": "/api/image/railway/g_2.png",
+            "title": "Sieć pod napięciem",
+            "description": "Znak oznacza, że nad przejazdem kolejowym jest zawieszona sieć trakcyjna pod napięciem."
+        },
+        {
+            "name": "g_3",
+            "image": "/api/image/railway/g_3.png",
+            "title": "Krzyż św. Andrzeja przed przejazdem kolejowym jednotorowym",
+            "description": "Znak wyznacza miejsce zatrzymania się w związku z ruchem pociągu lub innego pojazdu szynowego na przejeździe kolejowym bez zapór lub półzapór; znak ten informuje, że na przejeździe występuje jeden tor."
+        },
+        {
+            "name": "g_4",
+            "image": "/api/image/railway/g_4.png",
+            "title": "Krzyż św. Andrzeja przed przejazdem kolejowym wielotorowym",
+            "description": "Znak wyznacza miejsce zatrzymania się w związku z ruchem pociągu lub innego pojazdu szynowego na przejeździe kolejowym bez zapór lub półzapór; znak ten informuje, że na przejeździe występuje więcej niż jeden tor."
+        }
     ]
 }
