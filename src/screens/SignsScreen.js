@@ -15,8 +15,7 @@ const SignsScreen = ({ route, navigation }) => {
     
 
     useEffect(() => {
-        console.log(`Fetching signs for category: ${category}`);
-        fetch(`http://192.168.0.104:5000/api/signs/${encodeURIComponent(category)}`) // Zakoduj kategorię
+        fetch(`http://192.168.0.104:5000/api/signs/${encodeURIComponent(category)}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -24,7 +23,22 @@ const SignsScreen = ({ route, navigation }) => {
                 return response.json();
             })
             .then((data) => {
-                setSigns(data);
+                const sortedData = data.sort((a, b) => {
+                    const getNumber = (name) => {
+                        const match = name.match(/\d+/); 
+                        return match ? parseInt(match[0], 10) : 0; 
+                    };
+    
+                    const numberA = getNumber(a.name);
+                    const numberB = getNumber(b.name);
+    
+                    if (numberA === numberB) {
+                        return a.name.localeCompare(b.name); 
+                    }
+                    return numberA - numberB; 
+                });
+    
+                setSigns(sortedData);
                 setLoading(false);
             })
             .catch((error) => {
@@ -33,6 +47,8 @@ const SignsScreen = ({ route, navigation }) => {
                 setLoading(false);
             });
     }, [category]);
+    
+    
     
 
     if (loading) {
@@ -86,6 +102,7 @@ const SignsScreen = ({ route, navigation }) => {
             >
                 <Image source={{ uri: imageUrl }} style={styles.icon} resizeMode="contain" />
                 <Text style={styles.itemText}>{capitalizeFirstLetter(item.name)}</Text>
+                <Text style={styles.itemText}>{capitalizeFirstLetter(item.title)}</Text>
             </TouchableOpacity>
         );
     }}
