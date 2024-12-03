@@ -7,7 +7,7 @@ const PhotosGallery = () => {
   const [imageUri, setImageUri] = useState(null);
   const [imageAssetUri, setImageAssetUri] = useState(null);
 
-  // Funkcja do wybierania obrazu z galerii po załadowaniu komponentu
+  
   useEffect(() => {
     pickImageFromGallery();
   }, []);

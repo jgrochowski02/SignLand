@@ -1,31 +1,22 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 import BottomMenu from '../components/BottomMenu';
-import CameraComponent from '../components/CameraComponent';
+import Cam from '../components/Cam'; // Użyj nowego komponentu Cam
 import styles from '../utils/styles';
-import { RNCamera } from 'react-native-camera';
-import { Camera } from 'expo-camera/legacy';
-
 
 const HomeScreen = ({ navigation }) => {
     const [photoUri, setPhotoUri] = useState(null);
 
-    const goToProgress = (uri) => {
-        navigation.navigate('ResultScreen', { photoUri: uri });
-    };
-
-    const handleCapture = (uri) => {
-        setPhotoUri(uri);
-        goToProgress(uri);
+    // Funkcja przejścia do ekranu wyniku z przesłanym zdjęciem
+    const goToProgress = (photoName) => {
+        navigation.navigate('ResultScreen', { photoName });
     };
 
     return (
         <View style={styles.containerNoCenter}>
             <Header title="ZDJĘCIE" />
-        
-                <CameraComponent onCapture={handleCapture} />
-       
+            <Cam goToProgress={goToProgress} /> 
             <BottomMenu navigation={navigation} />
         </View>
     );
