@@ -17,7 +17,7 @@ const BottomMenu = () => {
     };
 
     return (
-        <View style={styles.bottomMenuContainer}>
+        <View style={styles.bottomMenuContainer}>   
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('DirectoryScreen')}>
                 <Image source={require('../assets/icons/list.png')} style={styles.BottomMenuicon} />
                 <Text style={styles.label}>Atlas</Text>

@@ -1,52 +1,36 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Camera } from 'expo-camera/legacy';
-
+import  Camera  from "expo-camera"; // Poprawny import
 import {
     Button,
     Image,
     StyleSheet,
     Text,
-    TouchableOpacity,
     View,
 } from "react-native";
 import * as FileSystem from "expo-file-system";
 
 export default function Cam({ goToProgress }) {
-    const [type, setType] = useState(Camera.Constants.Type.back); // Używamy Camera.Constants.Type
-    const [permission, requestPermission] = Camera.useCameraPermissions();
+    const [hasPermission, setHasPermission] = useState(null);
     const [photoName, setPhotoName] = useState('');
     const [photoUri, setPhotoUri] = useState(null);
-    const cameraRef = useRef(null); // Używamy useRef do przechowywania referencji
+    const cameraRef = useRef(null);
 
+    // Zarządzanie uprawnieniami
     useEffect(() => {
-        const askForPermission = async () => {
+        (async () => {
             const { status } = await Camera.requestCameraPermissionsAsync();
-            if (status === "granted") {
-                // Permission granted
-            } else {
-                // Handle permission denied
-                console.log("Permission denied");
-            }
-        };
-        askForPermission();
+            setHasPermission(status === "granted");
+        })();
     }, []);
 
-    function toggleCameraType() {
-        setType((current) =>
-            current === Camera.Constants.Type.back
-                ? Camera.Constants.Type.front
-                : Camera.Constants.Type.back
-        );
-    }
-
-    async function takePicture() {
+    const takePicture = async () => {
         if (cameraRef.current) {
             try {
                 const { uri } = await cameraRef.current.takePictureAsync();
                 const fileName = `photo_${Date.now()}.jpg`;
                 setPhotoName(fileName);
 
-                const folderName = "photos"; // Nazwa folderu
+                const folderName = "photos";
                 const folderUri = `${FileSystem.documentDirectory}${folderName}/`;
                 const fileUri = `${folderUri}${fileName}`;
 
@@ -64,18 +48,17 @@ export default function Cam({ goToProgress }) {
 
                 console.log("Zdjęcie zapisane w folderze:", fileUri);
                 setPhotoUri(uri);
-
             } catch (error) {
                 console.error("Błąd podczas robienia zdjęcia:", error);
             }
         }
-    }
+    };
 
-    if (!permission) {
+    if (hasPermission === null) {
         return <View><Text>Proszę czekać na uprawnienia...</Text></View>;
     }
 
-    if (!permission.granted) {
+    if (!hasPermission) {
         return <View><Text>Brak dostępu do kamery</Text></View>;
     }
 
@@ -83,7 +66,6 @@ export default function Cam({ goToProgress }) {
         <View style={styles.container}>
             <Camera
                 style={styles.camera}
-                type={type}
                 ref={cameraRef}
             />
             {photoUri ? (
@@ -94,15 +76,9 @@ export default function Cam({ goToProgress }) {
                 />
             ) : (
                 <View style={styles.buttonContainer}>
-                    <TouchableOpacity
-                        style={styles.button}
-                        onPress={toggleCameraType}
-                    >
-                        <Text style={styles.text}>Odwróć kamerkę</Text>
-                    </TouchableOpacity>
                     <Button
+                        title="Zrób zdjęcie"
                         onPress={takePicture}
-                        title="Zrób zdjęcie i zapisz"
                     />
                 </View>
             )}
@@ -117,6 +93,7 @@ export default function Cam({ goToProgress }) {
         </View>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -134,13 +111,4 @@ const styles = StyleSheet.create({
         padding: 16,
         backgroundColor: "#16151A",
     },
-    button: {
-        alignSelf: "flex-end",
-        alignItems: "center",
-    },
-    text: {
-        fontSize: 24,
-        fontWeight: "bold",
-        color: "white",
-    },
-})
+});

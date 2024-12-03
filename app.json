@@ -3,25 +3,32 @@
     "name": "SignLand",
     "slug": "SignLand",
     "version": "1.0.0",
-    "sdkVersion": "51.0.0",  
     "platforms": ["ios", "android"],
+    "jsEngine": "hermes",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "We need access to your camera to capture photos.",
+          "microphonePermission": "We need access to your microphone to record videos.",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
     "ios": {
-     "privacyManifests": {
-        "NSPrivacyAccessedAPITypes": [
-          {
-            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
-            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
-          }
-        ]
+      "newArchEnabled": true,
+      "infoPlist": {
+
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to use the camera"
       }
     },
     "android": {
       "permissions": [
         "CAMERA",
+        "RECORD_AUDIO",
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
       ]
     }
-    
   }
 }
