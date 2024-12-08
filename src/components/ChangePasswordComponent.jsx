@@ -41,7 +41,7 @@ const ChangePasswordComponent = ({ navigation }) => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <ImageBackground
-        source={require('../assets/icons/BackgroundSigns.jpg')}
+        source={require('../assets/icons/gradient.png')}
         style={styles.containerLogin}
       >
         <View style={styles.overlay}>

@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons'; 
 
-const UserChoice = ({ title, icon, onPress }) => {
+const UserChoice = ({ title, iconName, onPress }) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Image source={icon} style={styles.icon} />
+      <MaterialIcons name={iconName} size={32} color="black" style={styles.icon} />
       <Text style={styles.title}>{title}</Text>
-      <Image source={require('../assets/icons/right-arrow.png')} style={styles.arrow} />
+      <MaterialIcons name="chevron-right" size={24} color="black" style={styles.arrow} />
     </TouchableOpacity>
   );
 };
@@ -20,18 +21,13 @@ const styles = StyleSheet.create({
     borderBottomColor: '#ccc',
   },
   icon: {
-    width: 24,
-    height: 24,
     marginRight: 15,
   },
   title: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 20,
   },
-  arrow: {
-    width: 16,
-    height: 16,
-  },
+  arrow: {},
 });
 
 export default UserChoice;

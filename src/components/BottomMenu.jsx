@@ -3,6 +3,9 @@ import { View, TouchableOpacity, Text, Image, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useUserContext } from '../context/UserContext';
 import styles from '../utils/styles';
+import {  FontAwesome5, Fontisto, Entypo , AntDesign } from '@expo/vector-icons';
+
+
 const BottomMenu = () => {
     const navigation = useNavigation();
     const { isGuest } = useUserContext();
@@ -19,24 +22,24 @@ const BottomMenu = () => {
     return (
         <View style={styles.bottomMenuContainer}>   
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('DirectoryScreen')}>
-                <Image source={require('../assets/icons/list.png')} style={styles.BottomMenuicon} />
+                <AntDesign name="bars" size={32} color="black" />
                 <Text style={styles.label}>Atlas</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('PhotosScreen')}>
-                <Image source={require('../assets/icons/gallery.png')} style={styles.BottomMenuicon} />
+            <Fontisto name="photograph" size={32} color="black" />
                 <Text style={styles.label}>Galeria</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.tabCentered} onPress={() => handlePress('HomeScreen')}>
                 <View style={styles.centeredIconContainer}>
-                    <Image source={require('../assets/icons/camera.png')} style={styles.BottomMenuicon} />
+                <FontAwesome5 name="camera" size={38} color="black" />
                 </View>
             </TouchableOpacity>
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('HistoryScreen')}>
-                <Image source={require('../assets/icons/history.png')} style={styles.BottomMenuicon} />
+            <Entypo name="back-in-time" size={32} color="black" />
                 <Text style={styles.label}>Historia</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.tab} onPress={() => handlePress('AccountScreen')}>
-                <Image source={require('../assets/icons/user.png')} style={styles.BottomMenuicon} />
+            <FontAwesome5 name="user-alt" size={32} color="black" />
                 <Text style={styles.label}>Konto</Text>
             </TouchableOpacity>
         </View>

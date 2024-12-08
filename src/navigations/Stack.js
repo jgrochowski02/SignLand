@@ -1,23 +1,24 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
-import HistoryScreen from '../screens/HisotryScreen';
+import HistoryScreen from '../screens/HisotryScreen.jsx';
 import LoginScreen from '../screens/authentication/LoginScreen';
 import RegisterScreen from '../screens/authentication/RegisterScreen';
 import AccountScreen from '../screens/AccountScreen';
-import DirectoryScreen from '../screens/DirectoryScreen';
-import SettingsScreen from '../screens/SettingsScreen';
-import ResultScreen from '../screens/ResultScreen';
-import ChangePasswordScreen from '../screens/ChangePasswordScreen';
-import PhotosScreen from '../screens/PhotosScreen';
-import SignsScreen from '../screens/SignsScreen.js';
-import SignDetailScreen from '../screens/SignDetailScreen.js';
+import DirectoryScreen from '../screens/DirectoryScreen.jsx';
+import SettingsScreen from '../screens/SettingsScreen.jsx';
+import ResultScreen from '../screens/ResultScreen.jsx';
+import ChangePasswordScreen from '../screens/ChangePasswordScreen.jsx';
+import PhotosScreen from '../screens/PhotosScreen.jsx';
+import SignsScreen from '../screens/SignsScreen.jsx';
+import SignDetailScreen from '../screens/SignDetailScreen.jsx';
+import HelpScreen from '../screens/HelpScreen.jsx';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerShown: false }}>
+    <Stack.Navigator initialRouteName="LoginScreen" screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="HistoryScreen" component={HistoryScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
@@ -30,6 +31,7 @@ const AppNavigator = () => {
       <Stack.Screen name="PhotosScreen" component={PhotosScreen} />
       <Stack.Screen name="SignsScreen" component={SignsScreen} />
       <Stack.Screen name="SignDetailScreen" component={SignDetailScreen} />
+      <Stack.Screen name="HelpScreen" component={HelpScreen} />
     </Stack.Navigator>
   );
 };

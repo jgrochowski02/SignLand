@@ -10,6 +10,7 @@ import styles from '../utils/styles';
 import AvatarDisplay from '../components/AvatarDisplay';
 import { useAvatar } from '../context/AvatarContext';
 import ChangePasswordScreen from './ChangePasswordScreen';
+import {MaterialIcons, } from '@expo/vector-icons/';
 
 const AccountScreen = ({ navigation }) => {
   const { avatarUri } = useAvatar(); 
@@ -22,8 +23,8 @@ const AccountScreen = ({ navigation }) => {
     navigation.navigate('SettingsScreen'); 
   };
 
-  const handlePrivacyPolicy = () => {
-    navigation.navigate('PrivacyPolicyScreen'); 
+  const handleHelp = () => {
+    navigation.navigate('HelpScreen'); 
   };
 
   const handleLogout = async () => {
@@ -40,13 +41,14 @@ const AccountScreen = ({ navigation }) => {
       <Header title="PROFIL" />
       <AvatarDisplay avatarUri={avatarUri} /> 
       <UserInfo />
-      <UserChoice title="Zmiana hasła" icon={require('../assets/icons/editing.png')} onPress={handleEditData} />
-      <UserChoice title="Ustawienia" icon={require('../assets/icons/setting.png')} onPress={handleSettings} />
-      <UserChoice title="Polityka prywatności" icon={require('../assets/icons/padlock.png')} onPress={handlePrivacyPolicy} />
-      <UserChoice title="Wyloguj" icon={require('../assets/icons/logout.png')} onPress={handleLogout} />
+      <UserChoice title="Zmiana hasła" iconName="edit" onPress={handleEditData} />
+      <UserChoice title="Ustawienia" iconName="settings" onPress={handleSettings} />
+      <UserChoice title="Pomoc" iconName="question-mark" onPress={handleHelp} />
+      <UserChoice title="Wyloguj" iconName="logout" onPress={handleLogout} />
       <BottomMenu navigation={navigation} />
     </View>
   );
+  
 };
 
 export default AccountScreen;

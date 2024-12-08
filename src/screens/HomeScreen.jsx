@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 import BottomMenu from '../components/BottomMenu';
-import Cam from '../components/Cam'; // Użyj nowego komponentu Cam
+import CameraComponent from '../components/CameraComponent';
 import styles from '../utils/styles';
 
 const HomeScreen = ({ navigation }) => {
@@ -16,7 +16,7 @@ const HomeScreen = ({ navigation }) => {
     return (
         <View style={styles.containerNoCenter}>
             <Header title="ZDJĘCIE" />
-            <Cam goToProgress={goToProgress} /> 
+            
             <BottomMenu navigation={navigation} />
         </View>
     );

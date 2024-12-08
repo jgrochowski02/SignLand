@@ -28,7 +28,7 @@ const capitalizeFirstLetter = (text) => {
                 <Text style={styles.title}>{sign.title || 'Brak nazwy'}</Text>
                 
                
-                <Text style={styles.description}>{sign.description || 'Brak opisu'}</Text>
+                <Text style={styles.description}>{sign.description || ''}</Text>
             </ScrollView>
             <BottomMenu navigation={navigation} />
         </View>
