@@ -44,16 +44,16 @@ validation_dataset = validation_dataset.prefetch(buffer_size=AUTOTUNE)
 # Budowanie modelu CNN
 print("Building CNN model...")
 model = tf.keras.Sequential([
-    tf.keras.layers.Rescaling(1./255, input_shape=(150, 150, 3)), 
-    tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D((2, 2)),
-    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D((2, 2)),
-    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D((2, 2)),
-    tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(len(class_names), activation='softmax')  # Wyjście dopasowane do liczby klas
+    tf.keras.layers.Rescaling(1./255, input_shape=(150, 150, 3)),  # Normalizacja
+    tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),         # Pierwsza warstwa konwolucyjna
+    tf.keras.layers.MaxPooling2D((2, 2)),                          # Pierwsza warstwa pooling
+    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),         # Druga warstwa konwolucyjna
+    tf.keras.layers.MaxPooling2D((2, 2)),                          # Druga warstwa pooling
+    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),        # Trzecia warstwa konwolucyjna
+    tf.keras.layers.MaxPooling2D((2, 2)),                          # Trzecia warstwa pooling
+    tf.keras.layers.Flatten(),                                     # Spłaszczenie danych
+    tf.keras.layers.Dense(128, activation='relu'),                 # Gęsta warstwa ukryta
+    tf.keras.layers.Dense(len(class_names), activation='softmax')  # Warstwa wyjściowa z liczbą klas znaków
 ])
 
 # Kompilacja modelu
@@ -69,7 +69,7 @@ print("Training model...")
 history = model.fit(
     train_dataset,
     validation_data=validation_dataset,
-    epochs=10  # Możesz dostosować liczbę epok
+    epochs=10  # Liczba epok - dostosuj do potrzeb
 )
 
 # Zapisywanie modelu
