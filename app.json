@@ -3,25 +3,31 @@
     "name": "SignLand",
     "slug": "SignLand",
     "version": "1.0.0",
-    "sdkVersion": "51.0.0",  
     "platforms": ["ios", "android"],
+    "jsEngine": "hermes",
+    "plugins": [
+      ["expo-camera"],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "ios": {
-     "privacyManifests": {
-        "NSPrivacyAccessedAPITypes": [
-          {
-            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
-            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
-          }
-        ]
+      "newArchEnabled": true,
+      "infoPlist": {
+
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to use the camera"
       }
     },
     "android": {
       "permissions": [
         "CAMERA",
+        "RECORD_AUDIO",
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
       ]
     }
-    
   }
 }

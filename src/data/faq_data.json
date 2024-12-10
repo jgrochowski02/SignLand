@@ -1,0 +1,35 @@
+[
+    {
+        "question": "Czym jest aplikacja SignLand?",
+        "answer": "Aplikacja jest prostym narzędziem pomocniczym dla początkujących oraz zaawansowanych kierowców. Jej kluczowe funkcje to:\n·Rozpoznanie zeskanowanego znaku drogowego.\n·Zidentyfikowanie znaku drogowego wybranego z galerii.\n·Przegląd wszystkich znaków drogowych wraz z ich opisami."
+    },
+    {
+        "question": "Czy mogę korzystać z aplikacji bez konta?",
+        "answer": "Tak, możesz korzystać z trybu gościa wybierając tę opcję z ekranu logowania, jednak większość funkcji jest ograniczona. Jedynie możesz przeglądać zakładkę katalogu znaków drogowych."
+    },
+    {
+      "question": "Jak działa rozpoznawanie znaków drogowych?",
+      "answer": "Rozpoznawanie znaków w aplikacji opiera się na wykorzystaniu sieci konwolucyjnych (CNN), które są częścią technologii głębokiego uczenia.\nModel został wytrenowany na zbiorze zdjęć znaków drogowych, co pozwala mu na analizowanie obrazów i przypisywanie ich do odpowiednich kategorii. Gdy użytkownik zeskanuje znak lub wybierze zdjęcie z galerii, obraz jest przekształcany na format zrozumiały dla modelu, a następnie porównywany z danymi, na których model się nauczył.\nNa podstawie wyników analizy aplikacja wyświetla informacje o rozpoznanym znaku."
+    },
+    {
+      "question": "Jak mogę dostarczyć zdjęcie znaku do identyfikacji?",
+      "answer": "Aby rozpoznać znak ze zdjęcia musisz przejść do zakładki \"Galeria\". Wybrać zdjęcie z galerii oraz nacisnąć przycisk zatwierdzający identyfikację."
+    },
+    {
+        "question": "Jak zmienić hasło?",
+        "answer": "Przejdź do ekranu \"Konto\", kliknij na \"Zmiana hasła\" i postępuj zgodnie z instrukcjami."
+    },
+    {
+      "question": "Dlaczego zdjęcie z galerii się nie ładuje?",
+      "answer": "Sprawdź uprawnienia galerii, czy na pewno zezwala na korzystanie ze zdjęć. Jeśli wszystko jest w porządku wyślij maila opisując problem na adres: jgrochowski02@wp.pl"
+    },
+    {
+        "question": "Czy mogę dodać własne zdjęcia znaków drogowych do atlasu znaków drogowych?",
+        "answer": "Nie, aplikacja jest regularnie aktualizowana o nowe znaki drogowe, zapewniając użytkownikom dostęp do zawsze aktualnej i kompletnej bazy znaków."
+    },
+    {
+        "question": "Jak zgłosić problem?",
+        "answer": "W przypadku problemów skontaktuj się z naszym zespołem wsparcia poprzez wysłanie maila na adres: jgrochowski02@wp.pl."
+    }
+  ]
+  
