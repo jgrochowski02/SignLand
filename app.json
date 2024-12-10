@@ -6,12 +6,11 @@
     "platforms": ["ios", "android"],
     "jsEngine": "hermes",
     "plugins": [
+      ["expo-camera"],
       [
-        "expo-camera",
+        "expo-image-picker",
         {
-          "cameraPermission": "We need access to your camera to capture photos.",
-          "microphonePermission": "We need access to your microphone to record videos.",
-          "recordAudioAndroid": true
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
       ]
     ],

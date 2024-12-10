@@ -13,6 +13,7 @@ import PhotosScreen from '../screens/PhotosScreen.jsx';
 import SignsScreen from '../screens/SignsScreen.jsx';
 import SignDetailScreen from '../screens/SignDetailScreen.jsx';
 import HelpScreen from '../screens/HelpScreen.jsx';
+import ForgotPasswordScreen from '../screens/authentication/ForgotPasswordScreen.jsx';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ const AppNavigator = () => {
       <Stack.Screen name="SignsScreen" component={SignsScreen} />
       <Stack.Screen name="SignDetailScreen" component={SignDetailScreen} />
       <Stack.Screen name="HelpScreen" component={HelpScreen} />
+      <Stack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
     </Stack.Navigator>
   );
 };
