@@ -96,12 +96,14 @@ inputLoginContainer: {
   borderBottomWidth: 1,
   borderBottomColor: '#ccc',
   marginBottom: 20,
+  
   width: '100%',
   color: colours.text
   
 },
 overlay: {
   padding: 50,
+  marginTop: 80,
   width: '100%',
   alignItems: 'center',
 },
@@ -120,6 +122,7 @@ buttonLogin: {
 buttonTextLogin: {
   color: colours.text,
   fontSize: 25,
+  textAlign: 'center'
 },
 iconLogin: {
   width: 24,

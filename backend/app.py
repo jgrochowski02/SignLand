@@ -45,7 +45,7 @@ def get_signs(category):
         if sign_info:
             signs.append({
                 "name": sign_info["name"],
-                "image": f"http://192.168.0.103:5000/api/image/{category}/{file}",
+                "image": f"http://192.168.0.102:5000/api/image/{category}/{file}",
                 "title": sign_info.get("title", "Brak tytułu"),
                 "description": sign_info.get("description", "Brak opisu")
             })
