@@ -1,7 +1,6 @@
 import tensorflow as tf
 import os
 
-# Ścieżki do lokalnych katalogów
 LOCAL_TRAIN_DIR = "data/train-signs"
 LOCAL_VALIDATION_DIR = "data/validation-signs"
 
@@ -9,8 +8,8 @@ LOCAL_VALIDATION_DIR = "data/validation-signs"
 print("Creating training dataset...")
 train_dataset = tf.keras.utils.image_dataset_from_directory(
     LOCAL_TRAIN_DIR,
-    image_size=(150, 150),  # Rozmiar obrazu
-    batch_size=32          # Rozmiar partii
+    image_size=(150, 150), 
+    batch_size=32         
 )
 
 print("Creating validation dataset...")
@@ -20,23 +19,20 @@ validation_dataset = tf.keras.utils.image_dataset_from_directory(
     batch_size=32
 )
 
-# Wyświetlanie klas
 class_names = train_dataset.class_names
 print(f"Classes in training dataset: {class_names}")
 num_classes = len(class_names)
 
-# Upewnij się, że walidacja ma te same klasy
 val_class_names = validation_dataset.class_names
 print(f"Classes in validation dataset: {val_class_names}")
 
 if sorted(class_names) != sorted(val_class_names):
     raise ValueError("Mismatch in classes between training and validation datasets.")
 
-# Log sprawdzenia poprawności
 print(f"Number of classes in training dataset: {len(class_names)}")
 print(f"Number of classes in validation dataset: {len(val_class_names)}")
 
-# Optymalizacja ładowania danych
+
 AUTOTUNE = tf.data.AUTOTUNE
 train_dataset = train_dataset.prefetch(buffer_size=AUTOTUNE)
 validation_dataset = validation_dataset.prefetch(buffer_size=AUTOTUNE)
