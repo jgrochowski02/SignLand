@@ -1,11 +1,11 @@
 import tensorflow as tf
 
 # Wczytaj model
-model_path = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\models\traffic_sign_model.keras"
+model_path = "models/traffic_sign_model.keras"
 model = tf.keras.models.load_model(model_path)
 
 # Ścieżka do zapisu modelu w formacie TensorFlow Lite
-tflite_model_path = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\models\traffic_sign_model.tflite"
+tflite_model_path = "models/traffic_sign_model.tflite"
 
 # Konwersja do TensorFlow Lite
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
