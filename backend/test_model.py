@@ -5,14 +5,12 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 #from tensorflow.keras.utils import load_img, img_to_array
 
-# Ścieżka do zapisanego modelu
 model_path = "models/traffic_sign_model.keras"
 
 
 model = keras.models.load_model(model_path)
 print("Model loaded successfully.")
 
-# Ścieżka do danych testowych
 test_dir = "data/test-signs"
 
 

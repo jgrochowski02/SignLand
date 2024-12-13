@@ -6,10 +6,11 @@ from botocore.exceptions import NoCredentialsError
 
 app = Flask(__name__)
 
-# Ścieżki lokalne dla atlasu
-ATLAS_BASE_DIR = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\src\assets\signs"
-ATLAS_DATA_FILE = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\src\data\signs_data.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# Poprawione ścieżki względne
+ATLAS_BASE_DIR = os.path.join(BASE_DIR, "../src/assets/signs")
+ATLAS_DATA_FILE = os.path.join(BASE_DIR, "../src/data/signs_data.json")
 
 # Konfiguracja S3
 S3_BUCKET = "polish-traffic-signs-cnn"
@@ -45,7 +46,7 @@ def get_signs(category):
         if sign_info:
             signs.append({
                 "name": sign_info["name"],
-                "image": f"http://192.168.0.102:5000/api/image/{category}/{file}",
+                "image": f"http://192.168.0.104:5000/api/image/{category}/{file}",
                 "title": sign_info.get("title", "Brak tytułu"),
                 "description": sign_info.get("description", "Brak opisu")
             })
@@ -87,7 +88,7 @@ def get_training_images(category):
         all_images = {}
 
         for subfolder in subfolders:
-            subfolder_name = subfolder.rstrip('/').split('/')[-1]  # Nazwa podkatalogu, np. A1
+            subfolder_name = subfolder.rstrip('/').split('/')[-1]  
             
             images_response = s3_client.list_objects_v2(Bucket=S3_BUCKET, Prefix=subfolder)
             
