@@ -7,8 +7,6 @@ from botocore.exceptions import NoCredentialsError
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Poprawione ścieżki względne
 ATLAS_BASE_DIR = os.path.join(BASE_DIR, "../src/assets/signs")
 ATLAS_DATA_FILE = os.path.join(BASE_DIR, "../src/data/signs_data.json")
 

@@ -15,7 +15,7 @@ const SignsScreen = ({ route, navigation }) => {
     
 
     useEffect(() => {
-        fetch(`http://192.168.0.102:5000/api/signs/${encodeURIComponent(category)}`)
+        fetch(`http://192.168.0.104:5000/api/signs/${encodeURIComponent(category)}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -84,7 +84,7 @@ const SignsScreen = ({ route, navigation }) => {
     data={signs}
     keyExtractor={(item) => item.name}
     renderItem={({ item }) => {
-        const imageUrl = `http://192.168.0.102:5000/api/image/${encodeURIComponent(category)}/${encodeURIComponent(item.name)}.png`;
+        const imageUrl = `http://192.168.0.104:5000/api/image/${encodeURIComponent(category)}/${encodeURIComponent(item.name)}.png`;
 
         return (
             <TouchableOpacity
