@@ -2,8 +2,8 @@ import tensorflow as tf
 import os
 
 # Ścieżki do lokalnych katalogów
-LOCAL_TRAIN_DIR = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\data\train-signs"
-LOCAL_VALIDATION_DIR = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\data\validation-signs"
+LOCAL_TRAIN_DIR = "data/train-signs"
+LOCAL_VALIDATION_DIR = "data/validation-signs"
 
 # Tworzenie datasetów TensorFlow z lokalnych katalogów
 print("Creating training dataset...")
@@ -73,6 +73,6 @@ history = model.fit(
 )
 
 # Zapisywanie modelu
-model_save_path = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\models\traffic_sign_model.keras"
+model_save_path = "models/traffic_sign_model.keras"
 model.save(model_save_path)
 print(f"Model saved at {model_save_path}")

@@ -6,14 +6,14 @@ from sklearn.metrics import classification_report, confusion_matrix
 #from tensorflow.keras.utils import load_img, img_to_array
 
 # Ścieżka do zapisanego modelu
-model_path = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\models\traffic_sign_model.keras"
+model_path = "models/traffic_sign_model.keras"
 
 
 model = keras.models.load_model(model_path)
 print("Model loaded successfully.")
 
 # Ścieżka do danych testowych
-test_dir = r"C:\Users\48662\OneDrive\Pulpit\PRACA\SignLand\backend\data\test-signs"
+test_dir = "data/test-signs"
 
 
 test_dataset = tf.keras.utils.image_dataset_from_directory(
