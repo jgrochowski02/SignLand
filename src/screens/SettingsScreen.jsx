@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Image, TouchableOpacity, Alert, StyleSheet } from 'react-native';
 import Header from '../components/Header';
-import { useAvatar } from '../context/AvatarContext'; // Importuj kontekst
+import { useAvatar } from '../context/AvatarContext'; 
 
 const SettingsScreen = ({ navigation }) => {
-  const { setAvatarUri } = useAvatar(); // Uzyskaj setAvatarUri z kontekstu
+  const { setAvatarUri } = useAvatar();
 
   const avatars = [
     require('../assets/avatars/avatar1.png'),
@@ -21,15 +21,21 @@ const SettingsScreen = ({ navigation }) => {
     require('../assets/avatars/avatar12.png'),
   ];
 
-  const handleSelectAvatar = (avatar) => {
-    setAvatarUri(avatar);
-    Alert.alert('Sukces', 'Avatar został zmieniony.');
-    navigation.goBack(); 
+  const handleSelectAvatar = async (avatar) => {
+    try {
+      const avatarUri = Image.resolveAssetSource(avatar).uri; // Pobiera URI z lokalnego obrazu
+      await setAvatarUri(avatarUri); // Wywołanie z `AsyncStorage`
+      Alert.alert('Sukces', 'Avatar został zmieniony.');
+      navigation.goBack();
+    } catch (error) {
+      console.error('Error setting avatar:', error);
+      Alert.alert('Błąd', 'Nie udało się zmienić avatara. Spróbuj ponownie.');
+    }
   };
 
   return (
     <View style={styles.container}>
-      <Header title="USTAWIENIA" />
+      <Header title="WYBÓR AWATARA" />
       <View style={styles.avatarsContainer}>
         {avatars.map((avatar, index) => (
           <TouchableOpacity key={index} onPress={() => handleSelectAvatar(avatar)} style={styles.avatarWrapper}>

@@ -94,7 +94,7 @@ inputLoginContainer: {
   flexDirection: 'row',
   alignItems: 'center',
   borderBottomWidth: 1,
-  borderBottomColor: '#ccc',
+  borderBottomColor: '#000',
   marginBottom: 20,
   
   width: '100%',
@@ -142,11 +142,14 @@ register: {
 },
 link: {
   color: colours.text,
- 
 },
 
 itemText:{
   fontSize: 20,
+  fontWeight: 'bold',
+},
+itemText2:{
+  fontSize: 28,
   fontWeight: 'bold',
 }
 
