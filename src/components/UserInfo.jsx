@@ -19,7 +19,8 @@ const UserInfo = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.itemText}> {user.email}</Text>
+       <Text style={styles.itemText2}>Zalogowano:</Text>
+      <Text style={styles.itemText}>{user.email}</Text>
     </View>
   );
 };

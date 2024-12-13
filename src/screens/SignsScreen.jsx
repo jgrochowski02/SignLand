@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
         marginRight: 26,
     },
     itemText: {
-        fontSize: 28,
+        fontSize: 23,
         flex: 1,
         textAlign: 'center',
     },

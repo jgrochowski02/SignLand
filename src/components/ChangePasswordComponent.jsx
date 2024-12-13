@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text, Image, ImageBackground, Alert, TouchableWithoutFeedback, Keyboard,
-} from 'react-native';
+import { View, TextInput, TouchableOpacity, Text, Image, ImageBackground, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { updatePassword, EmailAuthProvider, reauthenticateWithCredential } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import styles from '../utils/styles';
@@ -8,6 +7,7 @@ import styles from '../utils/styles';
 const ChangePasswordComponent = ({ navigation }) => {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmNewPassword] = useState('');
 
   const handleReauthenticate = async () => {
     const user = auth.currentUser;
@@ -26,6 +26,11 @@ const ChangePasswordComponent = ({ navigation }) => {
   };
 
   const handleUpdatePassword = async () => {
+    if (newPassword !== confirmNewPassword) {
+      Alert.alert('Błąd', 'Nowe hasła muszą być identyczne.');
+      return;
+    }
+
     const reauthenticated = await handleReauthenticate();
     if (reauthenticated && newPassword) {
       try {
@@ -41,7 +46,7 @@ const ChangePasswordComponent = ({ navigation }) => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <ImageBackground
-        source={require('../assets/icons/gradient.png')}
+        source={require('../assets/icons/background1.jpg')}
         style={styles.containerLogin}
       >
         <View style={styles.overlay}>
@@ -70,6 +75,21 @@ const ChangePasswordComponent = ({ navigation }) => {
               placeholderTextColor="#000"
               value={newPassword}
               onChangeText={setNewPassword}
+              secureTextEntry
+              style={styles.inputLogin}
+            />
+          </View>
+
+          <View style={styles.inputLoginContainer}>
+            <Image
+              source={require('../assets/icons/lockPadlock.png')}
+              style={styles.iconLogin}
+            />
+            <TextInput
+              placeholder="Powtórz Nowe Hasło"
+              placeholderTextColor="#000"
+              value={confirmNewPassword}
+              onChangeText={setConfirmNewPassword}
               secureTextEntry
               style={styles.inputLogin}
             />

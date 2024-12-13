@@ -2,9 +2,11 @@ import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
 const AvatarDisplay = ({ avatarUri }) => {
+  const source = typeof avatarUri === 'string' ? { uri: avatarUri } : avatarUri;
+
   return (
     <View style={styles.container}>
-      <Image source={avatarUri} style={styles.avatar} />
+      <Image source={source} style={styles.avatar} />
     </View>
   );
 };
@@ -14,11 +16,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: 20,
-    marginBottom: -30
+    marginBottom: -30,
   },
   avatar: {
-    width: 200,
-    height: 200,
+    width: 280,
+    height: 280,
+    borderRadius: 140,
   },
 });
 
